@@ -36,8 +36,43 @@ Needs to have a unique ID field - needs to be noted and entered into following E
 
 ## Step 6: Run Python data prep script
 
+
+
 ## Step 7: Edit App options YAML file
 
+The YAML file is how the user will customize the application for the editing needs. This is done by defining field names for the created event table and the corresponding buttons and drop down values. 
+
+1. Polygon section:
+   - This section should **not** be edited by the users.
+   - The polygon section is contains information for the Time Sync application (spectral values, geometries, etc.)
+2. Display section :
+   - The user will edit this section.
+   - This section is where the user will define what editable fields they will have in the Time Sync application and the values that can be attributed to them.  
+   - Special keywords: 
+     - Comment :
+       - If the user wants to add text comments the value submit is needed as the value like in the example below.
+     - YOD
+       - If the user needs a dynamic way to add year values to the yaml file the 'year' value dynamic add year values to the drop down when an observation is selected. 
+   - Structure:
+     -  Image example of the display section:
+
+![](C:\Users\PeterClary\Desktop\display_example.JPG)
+
+1. Event Section:
+
+   - The user will edit this section.
+   - In the event section the user added the editable fields. This field names need to match the ones the user added in the display section. 
+
+2. Format Notes:
+
+   - Uses 4 spaces for one indentation. 
+
+
+   - No spaces between words for field values.
+   - Fields names need a colon at the end of them.
+   - values can have spaces between words.
+   - Number values need parentheses.
+ 
 ## Step 8: Start the App
 
 
