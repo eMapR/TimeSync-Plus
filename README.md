@@ -158,3 +158,22 @@ The image chip in the upper right is different from the other images chips in th
 The user can change the base map by clicking the map icon in this image chip. the user can also remove the geometry in this image chip by unselecting the ROI option in the map icon.
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/04mainchip3.JPG' width="200">
+
+At the bottom of the application's display is a set of yearly spectral image maps with a geometry on top of them. This set of temporal images help the user get a feel for what the spectral plot is displaying and allow for more informed attribute selection.
+
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/05imagechips.JPG' width="300">
+
+The user can apply attributes to each plot ID by right clicking an observation in the spectral trajectory plot. This action will open a pop up box with several button that where defined by the user in the yaml file. When clicked these button open and show a selection of values that can be applied and saved to the event table in the SQL database. 
+
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/06savedata2.JPG' width="250">
+
+If the comment/submit pair where applied in the yaml file the pop up box will have a comment button, and when clicked a comment box will expand in the pop up box. The user can add as much text as needed; however, when the user is done commenting the user need to click the submit button below the comment box. And once all associated values have been chosen the user will need to click the save button in order to record his or her attributes. 
+
+All of the pop up button options need to have values picked in order to save them!
+
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/06savedata3.JPG' width="250">
+
+To export the event table with saved attributes the user need to click on the Download CSV button in the header of the application. When clicked the user will be prompted with a dialog box asking where to save the CSV file. 
+
+
+
