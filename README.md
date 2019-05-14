@@ -56,6 +56,45 @@ directory structure
 
 
 ## Step 6: Run Python data prep script
+There are three python scripts one that creates a SQL data-base (`create_sql_db.py`), and others parcel up the time series images into tiles (`make_rgb_tms.py`). There are located in two different folders in the directory structure. `create_sql_db.py`is located at the base of the directory and `make_rgb_tms.py` and its dependent script is located in the “tiles” folder, which is located in the base directory.
+
+ 
+
+`make_rgb_tms.py` only needs to know the location of the “TimeSync” folder , which contains the downloaded images and the geojson files.
+
+
+
+`create_sql_db.py` has two inputs, first,  a yaml or text file and a geojson file. The yaml file is located in the base directory. The geojson file is outputted with the Google Earth Engine images that where downloaded in step 5 and should be in “TimeSync” folder which is in the “tiles” directory.  
+
+------
+
+To Run `make_rgb_tms.py`: open your LT-Change-DB command prompt and go to tiles folder then add and run:
+
+​            `python make_rgb_tms.py ./TimeSync`
+
+ 
+
+This process will create a “tms” folder that will house the tile images.
+
+------
+
+To Run the “create_sql_db.py”: in your LT-Change-DB command prompt add and run:
+
+ 
+
+​            `python create_sql_db.py`
+
+ 
+
+Once running it will prompt you to find the locations of the yaml file and the location of the observations.geojson with file path dialog boxes. Once completed a sql database will be located in the base directory.
+
+------
+
+ 
+
+ 
+
+   
 
 
 
@@ -77,7 +116,7 @@ The YAML file is how the user will customize the application for the editing nee
    - Structure:
      -  Image example of the display section:
 
-![](C:\Users\PeterClary\Desktop\display_example.JPG)
+![](\display_example.JPG)
 
 1. Event Section:
 
