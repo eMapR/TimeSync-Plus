@@ -141,21 +141,21 @@ Once opened, a dialog box will appear and the user will need to locate the SQL d
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/01_DB_box.JPG' width="400">
 
-Clicking on one of the plot list identification values, will render the spectral and spatial data for area the ID represents. This may take a few moments. Once loaded, the user will see that plot list ID value is highlighted, and spectral plot in the upper center is populated, and that there are several images clips with the same polygon to the upper right bottom sections. 
+Clicking on one of the plot list identification values, will render the spectral and spatial data for area the ID represents. This may take a few moments. Once loaded, the user will see that plot list ID value is highlighted, and spectral plot in the upper center is populated, and that there are several images chips with the same polygon geometry in the upper right bottom sections. 
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist.JPG' width="200"> 
 
-The spectral plot show the summary spectral values for the area represent by the point of polygon shown. For visual purposes, the user can double click on two observation points to connect a line between them.
+The spectral plot shows the summary spectral values for the area represent by the point or polygon displayed. For visual purposes, the user can double click on two observation points to connect a line between them.
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/03_specplot3.JPG' width="300">
 
-More line segment can be added by continuing to double click on more observation points. To remove  line segments double click on a already selected point.
+More line segment can be added by continuing to double click on more observation points. To remove line segments double click on a already selected point.
 
-The image chip in the upper right is different from the other images chips in that it show approximately current Ariel imagery, topographical, and street base maps. 
+The image chip in the upper right is different from the other images chips in that it show approximately current ariel imagery, topographical, and street base maps. 
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/04mainchip.JPG' width="200">
 
-The user can change the base map by clicking the map icon in this image chip. the user can also remove the geometry in this image chip by unselecting the ROI option in the map icon.
+The user can change the base map by clicking the map icon in this image chip. The user can also remove the geometry in this image chip by unselecting the ROI option in the map icon.
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/04mainchip3.JPG' width="200">
 
@@ -169,11 +169,11 @@ The user can apply attributes to each plot ID by right clicking an observation i
 
 If the comment/submit pair where applied in the yaml file the pop up box will have a comment button, and when clicked a comment box will expand in the pop up box. The user can add as much text as needed; however, when the user is done commenting the user need to click the submit button below the comment box. And once all associated values have been chosen the user will need to click the save button in order to record his or her attributes. 
 
-All of the pop up button options need to have values picked in order to save them!
+All of the pop up button options need to have values selected in order to save them!
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/06savedata3.JPG' width="250">
 
-To export the event table with saved attributes the user need to click on the Download CSV button in the header of the application. When clicked the user will be prompted with a dialog box asking where to save the CSV file. 
+To export the event table with saved attributes the user need to click on the Download CSV button in the header of the application. When clicked the user will be prompted with a dialog box asking where to save the CSV file. Once the user define a place the save the file a CSV file will appear there.
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/07export.JPG' width="250">
 
