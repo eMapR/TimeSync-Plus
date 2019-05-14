@@ -100,7 +100,9 @@ Once running it will prompt you to find the locations of the yaml file and the l
 
 ## Step 7: Edit App options YAML file
 
-The YAML file is how the user will customize the application for the editing needs. This is done by defining field names for the created event table and the corresponding buttons and drop down values. 
+The yaml or text file is edited by the user for flexibility in the applications attribution process and flexibility in structure of the editable table. In the yaml file there a line strucutres that represent the names, feilds, and values for each of the tables that will be created in SQL database by create_sql_db.py. Below is the general structure of the file:
+
+
 
 1. Polygon section:
    - This section should **not** be edited by the users.
@@ -114,26 +116,34 @@ The YAML file is how the user will customize the application for the editing nee
      - YOD
        - If the user needs a dynamic way to add year values to the yaml file the 'year' value dynamic add year values to the drop down when an observation is selected. 
    - Structure:
-     -  Image example of the display section:
+     - Image example of the display section:
 
 ![](\display_example.JPG)
 
 1. Event Section:
-
    - The user will edit this section.
    - In the event section the user added the editable fields. This field names need to match the ones the user added in the display section. 
-
 2. Format Notes:
-
    - Uses 4 spaces for one indentation. 
 
+- No spaces between words for field values.
+- Fields names need a colon at the end of them.
+- values can have spaces between words.
+- Number values need parentheses.
 
-   - No spaces between words for field values.
-   - Fields names need a colon at the end of them.
-   - values can have spaces between words.
-   - Number values need parentheses.
- 
 ## Step 8: Start the App
+
+The application location is in the TS-Plus folder in the base directory. In the TS-Plus folder there is a file named (ts name). Double click this file to open the TS-Plus application.
+
+
+
+Once opened, a dialog box will appear and the user will need to locate the SQL database that was created in step 6. When the SQL file is found double click it and the dialog box will disappear. After a few moments the plot list will be populated with polygon or point identifaction values.
+
+
+
+Clicking on one of the plot list identifaction values,  will render the spectral and spatial data for area the ID represents. This may take a few moments. Once loaded, the user will see that plot list ID value is highlighted, and spectral plot in the upper center is populated, and that there are several images clips with the same polygon. The image chip in the upper right is different from the other images chips in that it show appromiatiy current ariel imagery, topograpical, and street base maps. the user can change the base map by clicking the map icon in this image chip. the user can also remove the geometry in this image chip by unselecting the ROI option in the map icon. 
+
+  
 
 
 
