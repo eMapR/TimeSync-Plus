@@ -175,5 +175,6 @@ All of the pop up button options need to have values picked in order to save the
 
 To export the event table with saved attributes the user need to click on the Download CSV button in the header of the application. When clicked the user will be prompted with a dialog box asking where to save the CSV file. 
 
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/07export.JPG' width="250">
 
 
