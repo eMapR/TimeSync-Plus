@@ -137,18 +137,25 @@ The application location is in the TS-Plus folder in the base directory. In the 
 
 
 
-Once opened, a dialog box will appear and the user will need to locate the SQL database that was created in step 6. When the SQL file is found double click it and the dialog box will disappear. After a few moments the plot list will be populated with polygon or point identifaction values.
+Once opened, a dialog box will appear and the user will need to locate the SQL database that was created in step 6. When the SQL file is found double click it and the dialog box will disappear. After a few moments the plot list will be populated with polygon or point identification values.
 
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/01_DB_box.JPG' width="400">
 
+Clicking on one of the plot list identification values, will render the spectral and spatial data for area the ID represents. This may take a few moments. Once loaded, the user will see that plot list ID value is highlighted, and spectral plot in the upper center is populated, and that there are several images clips with the same polygon to the upper right bottom sections. 
 
-Clicking on one of the plot list identifaction values,  will render the spectral and spatial data for area the ID represents. This may take a few moments. Once loaded, the user will see that plot list ID value is highlighted, and spectral plot in the upper center is populated, and that there are several images clips with the same polygon. The image chip in the upper right is different from the other images chips in that it show appromiatiy current ariel imagery, topograpical, and street base maps. the user can change the base map by clicking the map icon in this image chip. the user can also remove the geometry in this image chip by unselecting the ROI option in the map icon. 
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist.JPG' width="200">
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist2.JPG' width="200">
 
-  
+The spectral plot show the summary spectral values for the area represent by the point of polygon shown. For visual purposes, the user can double click on two observation points to connect a line between them.
 
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/03_specplot3.JPG' width="300">
 
+More line segment can be added by continuing to double click on more observation points. To remove  line segments double click on a already selected point.
 
+The image chip in the upper right is different from the other images chips in that it show approximately current Ariel imagery, topographical, and street base maps. 
 
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/04mainchip.JPG' width="200">
 
+The user can change the base map by clicking the map icon in this image chip. the user can also remove the geometry in this image chip by unselecting the ROI option in the map icon.
 
-
-
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/04mainchip3.JPG' width="200">
