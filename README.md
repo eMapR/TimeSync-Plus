@@ -143,7 +143,7 @@ Once opened, a dialog box will appear and the user will need to locate the SQL d
 
 Clicking on one of the plot list identification values, will render the spectral and spatial data for area the ID represents. This may take a few moments. Once loaded, the user will see that plot list ID value is highlighted, and spectral plot in the upper center is populated, and that there are several images clips with the same polygon to the upper right bottom sections. 
 
-<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist.JPG' width="200"><img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist2.JPG' width="200">
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist.JPG' width="200">       <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist2.JPG' width="250">
 
 The spectral plot show the summary spectral values for the area represent by the point of polygon shown. For visual purposes, the user can double click on two observation points to connect a line between them.
 
