@@ -34,24 +34,7 @@ Needs to have a unique ID field - needs to be noted and entered into following E
 
 ## Step 5: Download data from Google Drive
 
-directory structure
 
-- TS-Event-py27
-  - create_sql_DB.py
-  - config.yaml
-  - TS_DB.db
-  - TS-Event.exe
-  - tiles
-    - gdal2tiles.py
-    - make_rgb_tms.py
-    - TimeSync
-      - observatios.geojson
-      - observationsInfo.geojson
-      - rgb432
-      - rgb543
-      - rgb654
-      - rgbTC
-      - tms
 
 
 
