@@ -19,24 +19,23 @@ TimeSync+ is a desktop application modeled after the original [TimeSync applicat
 
 Make a point or polygon shapefile. Either generate your own or use the [LT-ChangeDB](http:example.com) process.
 
-Needs to have a unique ID field - needs to be noted and entered into following Earth Engine script
+Needs to have a unique ID field called "uniqID" - needs to be noted and entered into following Earth Engine script
 
 
 ## Step 2: Upload the shapefile to Google Earth Engine
 
 1. Get an EE account
-2. Upload Asset 
-3. 
+2. Upload shapefile Asset as table 
 
 ## Step 3: Run Google Earth Engine Script to generate data
 
-Before running the GEE script to generate images and observation data you need to make sure the feature collection file path points to your uploaded asset, and that the feature ID string is the same as your asset's unique ID field name. The feature collection path looks like:
+Before running the GEE script to generate images and observation data you need to make sure the feature collection file path points to your uploaded asset, and that the feature ID string is "uniqID". The feature collection path looks like:
 
 `lcb.props['featureCollection'] = 'your/assest/location'`
 
 and the feature ID looks like:
 
-`lcb.props['featureID'] = 'your unique ID'`
+`lcb.props['featureID'] = 'uniqID'`
 
 Next click "Run" at the top of the console.
 
