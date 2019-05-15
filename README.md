@@ -58,7 +58,10 @@ Here, you can define where the files and images get saved. Please, keep the defa
 
 ## Step 4: Download data from Google Drive
 
+Once all the tasks are completed there will be a folder in your Google Drive called TimeSync. To down the folder right click it and select download. This will create a zip folder and it will be downloaded to your computer. Make a new folder on your computer and name it 'tiles'. Then extract all the contents of the zip folder to 'tiles'.
 
+Next, you'll need to download the python file in at our python file by [clicking here]() and then place 'gdal2tiles.py' and
+'make_rgb_tms.py' in the 'tiles' folder so it looks like this:
 
 
 
