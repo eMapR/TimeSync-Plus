@@ -79,7 +79,7 @@ This process will create a “tms” folder that will house the tile images.
 ------
 Once your done with the above process you'll need to make a new folder called 'TS-Plus' and place the 'tiles' directroy in it. TS-Plus will be the base of the directory and this where the config.txt file should be place along with 'create_sql_db.py' and the 'TimeSyncPlus' application folder. the base directory should look like this:
 
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/folder1.JPG' width = 300>
+<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/folder1.JPG' width = 200>
 
 
 To Run the “create_sql_db.py”: in your LT-Change-DB command prompt add and run:
