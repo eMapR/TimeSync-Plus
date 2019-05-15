@@ -100,36 +100,71 @@ Once running it will prompt you to find the locations of the yaml file and the l
 
 ## Step 7: Edit App options YAML file
 
-The yaml or text file is edited by the user for flexibility in the applications attribution process and flexibility in structure of the editable table. In the yaml file there a line strucutres that represent the names, feilds, and values for each of the tables that will be created in SQL database by create_sql_db.py. Below is the general structure of the file:
 
 
 
-1. Polygon section:
-   - This section should **not** be edited by the users.
-   - The polygon section is contains information for the Time Sync application (spectral values, geometries, etc.)
-2. Display section :
-   - The user will edit this section.
-   - This section is where the user will define what editable fields they will have in the Time Sync application and the values that can be attributed to them.  
-   - Special keywords: 
-     - Comment :
-       - If the user wants to add text comments the value submit is needed as the value like in the example below.
-     - YOD
-       - If the user needs a dynamic way to add year values to the yaml file the 'year' value dynamic add year values to the drop down when an observation is selected. 
-   - Structure:
-     - Image example of the display section:
 
-![](\display_example.JPG)
+This text file was a YAML file, but due to the limitation of environment  parameters a more basic form was needed. Unfortunately, this means that editing this file may be more daunting for some. 
 
-1. Event Section:
-   - The user will edit this section.
-   - In the event section the user added the editable fields. This field names need to match the ones the user added in the display section. 
-2. Format Notes:
-   - Uses 4 spaces for one indentation. 
+In order for the user to have flexibility in attribution, a text file is needed so that the user can define features to attribute. The config.txt file is used just for that purpose. In this config.txt file the user can edit names of fields and values which are representative of how the event table is structured and how attribution properties function in the application.
 
-- No spaces between words for field values.
-- Fields names need a colon at the end of them.
-- values can have spaces between words.
-- Number values need parentheses.
+The config.txt file is a python dictionary, and in this dictionary there are three main pieces a 'polygonTable', 'displayTable', and 'eventTable'. Of these there are two objects the user can add to, and they are the "displayTable" and the "eventTable". The "polygonTable" should not be changed! To make changes to the config.txt file follow the example below.
+
+This is what the config.txt file looks like:
+
+------
+
+```
+{
+'polygonTable': ['plotid', 'geo', 'json'], 
+'displayTable': {
+	'Comment': ['submit'], 
+	'ChangeAgent': ['none', 'unknown', 'regrowth', 'fire', 'logging','flooding', 'pine bug', 'false reading'], 
+	'YOD': ['year', 'false reading'], 
+	'User': ['Peter', 'Katie'],
+	'Confidance': ['low', 'med', 'high']}, 
+'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'Confidance', 'User', 'Comment']
+}
+```
+
+------
+
+if we wanted to add a 'state' field to our table we would need to add " 'state', " to the 'eventTable' list. A list contain the values in the square brackets "[ ]". In the event table only add values after 'LT_YOD'. Once we add 'state' our event table line would look like this:
+
+------
+
+`'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'state', Confidance', 'User', 'Comment']`
+
+------
+
+you can add the " 'state', " value anywhere in the list aslong as it is after " 'LT_YOD', ". Next, if we want to be able to attribute our new feild we need to add a 'state' key to our display table object. The syntax is a key and value pair. The key stands alone in parenthesis with a colon after it followed by a list of values. In out case 'state' would be the key, and the state types would be our values as in the example below. 
+
+------
+
+ `'State': ['forest','urban','barren']`
+
+------
+
+you can add the key/value pair anywhere in the displaytables curly brackets '{ }'. Our new config.txt looks like this now.
+
+```
+
+{
+'polygonTable': ['plotid', 'geo', 'json'], 
+'displayTable': {
+	'Comment': ['submit'], 
+	'ChangeAgent': ['none', 'unknown', 'regrowth', 'fire', 'logging', 'flooding', 'pine bug', 'false reading'], 
+	'YOD': ['year', 'false reading'], 
+	'User': ['Peter', 'Katie'],\
+	'State': ['forest','urban','barren']  <<<< new <<<<<
+	'Confidance': ['low', 'med', 'high']}, 
+'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'Confidance', 'state', 'User', 'Comment']
+}
+```
+
+------
+
+Be sure to save the config.txt file.
 
 ## Step 8: Start the App
 
