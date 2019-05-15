@@ -40,7 +40,6 @@ and the feature ID looks like:
 
 Next click "Run" at the top of the console.
 
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/gee2.JPG' width = 200>
 
 After a few momentsthe the console tab should turn yellow and object will be appear under the tasks tab.
 
