@@ -38,6 +38,24 @@ and the feature ID looks like:
 
 `lcb.props['featureID'] = 'your unique ID'`
 
+Next click "Run" at the top of the console.
+
+<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/gee2.JPG' width = 200>
+
+After a few momentsthe the console tab should turn yellow and object will be appear under the tasks tab.
+
+<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/gee3.JPG' width = 300>
+
+depending on if you want all the images or just TC (tassel cap), here you have the option. Click the 'Run' on which ever images you like, but you'll need to run the tasks for all the observation files. After Clicking the 'Run' button you will be prompted with a dialog 
+box that looks like this:
+
+<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/gee4.JPG' width = 300>
+
+Here, you can define where the files and images get saved. Please, keep the default file names.
+
+
+
+
 ## Step 4: Download data from Google Drive
 
 
