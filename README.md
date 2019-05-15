@@ -30,15 +30,15 @@ Needs to have a unique ID field - needs to be noted and entered into following E
 
 ## Step 3: Run Google Earth Engine Script to generate data
 
-## Step 4: Run Google Earth Engine Script to generate data
+Before running the GEE script to generate images and observation data you need to make sure the feature collection file path points to your uploaded asset, and that the feature ID string is the same as your asset's unique ID field. 
 
-## Step 5: Download data from Google Drive
-
-
+## Step 4: Download data from Google Drive
 
 
 
-## Step 6: Run Python data prep script
+
+
+## Step 5: Run Python data prep script
 There are three python scripts one that creates a SQL data-base (`create_sql_db.py`), and others parcel up the time series images into tiles (`make_rgb_tms.py`). There are located in two different folders in the directory structure. `create_sql_db.py`is located at the base of the directory and `make_rgb_tms.py` and its dependent script is located in the “tiles” folder, which is located in the base directory.
 
  
@@ -81,7 +81,7 @@ Once running it will prompt you to find the locations of the yaml file and the l
 
 
 
-## Step 7: Edit App options text file
+## Step 6: Edit App options text file
 
 
 
@@ -149,7 +149,7 @@ you can add the key/value pair anywhere in the displaytables curly brackets '{ }
 Make sure the names between the display table and the event table are the same for it is case sensitive.
 Be sure to save the config.txt file.
 
-## Step 8: Start the App
+## Step 7: Start the App
 
 The application location is in the TS-Plus folder in the base directory. In the TS-Plus folder there is a file named (ts name). Double click this file to open the TS-Plus application.
 
