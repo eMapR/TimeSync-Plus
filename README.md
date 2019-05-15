@@ -155,8 +155,8 @@ you can add the key/value pair anywhere in the displaytables curly brackets '{ }
 	'Comment': ['submit'], 
 	'ChangeAgent': ['none', 'unknown', 'regrowth', 'fire', 'logging', 'flooding', 'pine bug', 'false reading'], 
 	'YOD': ['year', 'false reading'], 
-	'User': ['Peter', 'Katie'],\
-	'State': ['forest','urban','barren']  <<<< new <<<<<
+	'User': ['Peter', 'Katie'],
+	'State': ['forest','urban','barren'], 
 	'Confidance': ['low', 'med', 'high']}, 
 'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'Confidance', 'state', 'User', 'Comment']
 }
