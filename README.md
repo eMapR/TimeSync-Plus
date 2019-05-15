@@ -163,7 +163,7 @@ you can add the key/value pair anywhere in the displaytables curly brackets '{ }
 ```
 
 ------
-
+Make sure the names between the display table and the event table are the same for it is case sensitive.
 Be sure to save the config.txt file.
 
 ## Step 8: Start the App
