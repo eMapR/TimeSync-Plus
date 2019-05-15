@@ -63,6 +63,7 @@ Once all the tasks are completed there will be a folder in your Google Drive cal
 Next, you'll need to download the python file in at our python file by [clicking here]() and then place 'gdal2tiles.py' and
 'make_rgb_tms.py' in the 'tiles' folder so it looks like this:
 
+<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/folder.JPG' width = 300>
 
 
 ## Step 5: Run Python data prep script
