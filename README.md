@@ -81,7 +81,7 @@ Once running it will prompt you to find the locations of the yaml file and the l
 
 
 
-## Step 7: Edit App options YAML file
+## Step 7: Edit App options text file
 
 
 
