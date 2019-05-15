@@ -30,7 +30,13 @@ Needs to have a unique ID field - needs to be noted and entered into following E
 
 ## Step 3: Run Google Earth Engine Script to generate data
 
-Before running the GEE script to generate images and observation data you need to make sure the feature collection file path points to your uploaded asset, and that the feature ID string is the same as your asset's unique ID field. 
+Before running the GEE script to generate images and observation data you need to make sure the feature collection file path points to your uploaded asset, and that the feature ID string is the same as your asset's unique ID field name. The feature collection path looks like:
+
+`lcb.props['featureCollection'] = 'your/assest/location'`
+
+and the feature ID looks like:
+
+`lcb.props['featureID'] = 'your unique ID'`
 
 ## Step 4: Download data from Google Drive
 
