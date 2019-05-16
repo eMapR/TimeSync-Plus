@@ -28,6 +28,7 @@ Needs to have a unique ID field called "uniqID" - needs to be noted and entered 
 2. Upload shapefile Asset as table 
 
 ## Step 3: Run Google Earth Engine Script to generate data
+Once you have made it to the [Google Earth Engine IDE](https://code.earthengine.google.com/) copy and paste the javascript file "TS_Plus_GetData.js" into the Google Earth Engine console. "TS_Plus_GetData.js" can be found in the GEE_JS directory here on Github.
 
 Before running the GEE script to generate images and observation data you need to make sure the feature collection file path points to your uploaded asset, and that the feature ID string is "uniqID". The feature collection path looks like:
 
