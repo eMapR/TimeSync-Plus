@@ -171,15 +171,15 @@ Be sure to save the config.txt file.
 
 ## Step 7: Start the App
 
-The application location is in the TS-Plus folder in the base directory. In the TS-Plus folder there is a file named (ts name). Double click this file to open the TS-Plus application.
+The application location is in the TS-Plus folder in the base directory. In the TS-Plus folder there is a file named 'Plus'. Double click this file to open the TS-Plus application.
 
 
 
-Once opened, a dialog box will appear and the user will need to locate the SQL database that was created in step 6. When the SQL file is found double click it and the dialog box will disappear. After a few moments the plot list will be populated with polygon or point identification values.
+Once opened, a dialog box will appear and the user will need to locate the SQL database that was created in step 5. When the SQL file is found double click it and the dialog box will disappear. After a few moments the plot list will be populated with polygon or point identification values.
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/01_DB_box.JPG' width="400">
 
-Clicking on one of the plot list identification values, will render the spectral and spatial data for area the ID represents. This may take a few moments. Once loaded, the user will see that plot list ID value is highlighted, and spectral plot in the upper center is populated, and that there are several images chips with the same polygon geometry in the upper right bottom sections. 
+Clicking on one of the plot list identification values, will render the spectral and spatial data. This may take a few moments. Once loaded, the user will see that plot list ID value is highlighted, and spectral plot in the upper center is populated, and that there are several images chips with the same polygon geometry in the upper right bottom sections. 
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist.JPG' width="200"> 
 
@@ -201,13 +201,13 @@ At the bottom of the application's display is a set of yearly spectral image map
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/05imagechips.JPG' width="300">
 
-The user can apply attributes to each plot ID by right clicking an observation in the spectral trajectory plot. This action will open a pop up box with several button that where defined by the user in the yaml file. When clicked these button open and show a selection of values that can be applied and saved to the event table in the SQL database. 
+The user can apply attributes to the plot ID by right clicking an observation in the spectral trajectory plot. This action will open a pop up box with several button that where defined by the user in the text file. When clicked these button open and show a selection of values that need to be applied in order to save them to the event table in the SQL database. 
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/06savedata2.JPG' width="250">
 
-If the comment/submit pair where applied in the yaml file the pop up box will have a comment button, and when clicked a comment box will expand in the pop up box. The user can add as much text as needed; however, when the user is done commenting the user need to click the submit button below the comment box. And once all associated values have been chosen the user will need to click the save button in order to record his or her attributes. 
+If the comment/submit pair where applied in the text file the pop up box will have a comment button, and when clicked a comment box will expand in the pop up box. The user can add as much text as needed; however, when the user is done commenting the user must click the submit button below the comment box. And once all associated values have been chosen the user will need to click the save button in order to record his or her attributes. 
 
-All of the pop up button options need to have values selected in order to save them!
+All of the pop up button options need to have values selected in order for them to be save them!
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/06savedata3.JPG' width="250">
 
