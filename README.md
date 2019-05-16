@@ -132,15 +132,15 @@ This is what the config.txt file looks like:
 
 ------
 
-if we wanted to add a 'state' field to our table we would need to add " 'state', " to the 'eventTable' list. A list contain the values in the square brackets "[ ]". In the event table only add values after 'LT_YOD'. Once we add 'state' our event table line would look like this:
+if we wanted to add a 'State' field to our table we would need to add " 'State', " to the 'eventTable' list. A list contain the values in the square brackets "[ ]". In the event table only add values after 'LT_YOD'. Once we add 'state' our event table line would look like this:
 
 ------
 
-`'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'state', Confidance', 'User', 'Comment']`
+`'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'State', Confidance', 'User', 'Comment']`
 
 ------
 
-you can add the " 'state', " value anywhere in the list aslong as it is after " 'LT_YOD', ". Next, if we want to be able to attribute our new feild we need to add a 'state' key to our display table object. The syntax is a key and value pair. The key stands alone in parenthesis with a colon after it followed by a list of values. In out case 'state' would be the key, and the state types would be our values as in the example below. 
+you can add the " 'State', " value anywhere in the list aslong as it is after " 'LT_YOD', ". Next, if we want to be able to attribute our new feild we need to add a 'State' key to our display table object. The syntax is a key and value pair. The key stands alone in parenthesis with a colon after it followed by a list of values. In out case 'state' would be the key, and the state types would be our values as in the example below. 
 
 ------
 
@@ -161,7 +161,7 @@ you can add the key/value pair anywhere in the displaytables curly brackets '{ }
 	'User': ['Peter', 'Katie'],
 	'State': ['forest','urban','barren'], 
 	'Confidance': ['low', 'med', 'high']}, 
-'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'Confidance', 'state', 'User', 'Comment']
+'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'Confidance', 'State', 'User', 'Comment']
 }
 ```
 
