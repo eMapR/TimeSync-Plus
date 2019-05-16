@@ -45,7 +45,7 @@ After a few moments the console tab should turn yellow and object will be appear
 
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/gee3.JPG' width = 300>
 
-These tasks represent the images and geometries/data files that will be used in Time Sync Plus. You will see that there are four different 'rgb' images and three 'observation' files.   Click the 'Run' on which ever images you like, but you'll need to run the tasks for all the observation files. After Clicking the 'Run' button you will be prompted with a dialog 
+These tasks represent the images and geometries/data files that will be used in Time Sync Plus. You will see that there are four different 'rgb' images and three 'observation' files.   Click the 'Run' button for which ever images you like, but you'll need to run the tasks for all the observation files. After Clicking the 'Run' button you will be prompted with a dialog 
 box that looks like this:
 
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/gee4.JPG' width = 300>
