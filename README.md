@@ -67,16 +67,16 @@ Next, you'll need to download the python files in at our python folder [clicking
 
 ## Step 5: Run Python data prep script
 
-To Run `make_rgb_tms.py`: open your LT-Change-DB command prompt and go to tiles folder then add and run:
+To Run `make_rgb_tms.py`: open your LT-Change-DB command prompt and go to tiles folder using the change directory command 'cd', and then add and run:
 
-​            `python /full/file/path/to/tiles/make_rgb_tms.py /full/file/path/to/tiles/TimeSync`
+​            `python /full/file/path/to/tiles/make_rgb_tms.py /full/file/path/to/tiles/TimeSyncfolder`
 
  
 
 This process will create a “tms” folder that will house the tile images.
 
 ------
-Once your done with the above process you'll need to make a new folder called 'TS-Plus' and place the 'tiles' directroy in it. TS-Plus will be the base of the directory and this where the config.txt file should be place along with 'create_sql_db.py' and the 'TimeSyncPlus' application folder. the base directory should look like this:
+Once your done with the above process you'll need to make a new folder called 'TS-Plus' and place the 'tiles' directroy in it. TS-Plus will be the base of the directory and this where the config.txt file should be place along with 'create_sql_db.py' file and the 'TimeSyncPlus' application folder. the base directory should look like this:
 
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/folder1.JPG' width = 200>
 
@@ -132,7 +132,7 @@ This is what the config.txt file looks like:
 
 ------
 
-if we wanted to add a 'State' field to our table we would need to add " 'State', " to the 'eventTable' list. A list contain the values in the square brackets "[ ]". In the event table only add values after 'LT_YOD'. Once we add 'state' our event table line would look like this:
+If we wanted to add a 'State' field to our table we would need to add " 'State', " to the 'eventTable' list. A list contain the values in the square brackets "[ ]". In the event table only add values after 'LT_YOD'. Once we add 'State' our event table line would look like this:
 
 ------
 
@@ -140,7 +140,7 @@ if we wanted to add a 'State' field to our table we would need to add " 'State',
 
 ------
 
-you can add the " 'State', " value anywhere in the list aslong as it is after " 'LT_YOD', ". Next, if we want to be able to attribute our new feild we need to add a 'State' key to our display table object. The syntax is a key and value pair. The key stands alone in parenthesis with a colon after it followed by a list of values. In out case 'state' would be the key, and the state types would be our values as in the example below. 
+You can add the " 'State', " value anywhere in the list aslong as it is after " 'LT_YOD', ". Next, if we want to be able to attribute our new feild we need to add a 'State' key to our display table object. The syntax is a key and value pair. The key stands alone in parenthesis with a colon after it followed by a list of values. In out case 'State' would be the key, and the state types would be our values as in the example below. 
 
 ------
 
