@@ -32,7 +32,7 @@ Once you have made it to the [Google Earth Engine IDE](https://code.earthengine.
 
 Before running the GEE script to generate images and observation data you need to make sure the feature collection file path points to your uploaded asset, and that the feature ID string is "uniqID". The feature collection path looks like:
 
-`lcb.props['featureCollection'] = 'your/assest/location'`
+`lcb.props['featureCollection'] = 'your/asset/location'`
 
 and the feature ID looks like:
 
@@ -41,11 +41,11 @@ and the feature ID looks like:
 Next click "Run" at the top of the console.
 
 
-After a few momentsthe the console tab should turn yellow and object will be appear under the tasks tab.
+After a few moments the console tab should turn yellow and object will be appear under the tasks tab.
 
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/gee3.JPG' width = 300>
 
-depending on if you want all the images or just TC (tassel cap), here you have the option. Click the 'Run' on which ever images you like, but you'll need to run the tasks for all the observation files. After Clicking the 'Run' button you will be prompted with a dialog 
+These tasks represent . Click the 'Run' on which ever images you like, but you'll need to run the tasks for all the observation files. After Clicking the 'Run' button you will be prompted with a dialog 
 box that looks like this:
 
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/gee4.JPG' width = 300>
