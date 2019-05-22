@@ -1,0 +1,11 @@
+{
+'polygonTable': ['plotid', 'geo', 'json'], 
+'displayTable': {
+    'Comment': ['submit'], 
+    'ChangeAgent': ['none', 'unknown', 'regrowth', 'fire', 'logging', 'flooding', 'pine bug', 'false reading'], 
+    'YOD': ['year', 'false reading'], 
+    'User': ['Peter', 'Katie'], 
+    'Confidance': ['low', 'med', 'high']}, 
+'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'Confidance', 'User', 'Comment']
+}
+
