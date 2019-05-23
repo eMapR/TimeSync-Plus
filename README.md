@@ -88,7 +88,7 @@ To Run the “create_sql_db.py”: in your LT-Change-DB command prompt add and r
 
  
 
-Once running it will prompt you to find the locations of the config text file ()and the location of the observations.geojson with file path dialog boxes. Once completed a sql database will be located in the base directory.
+Once running it will prompt you to find the locations of the config text file and the location of the observations.geojson with file path dialog boxes. The geojson file is in the TimeSync folder where the images are. Once completed a sql database will be located in the base directory.
 
 ------
 
