@@ -33,10 +33,10 @@ Once you have made it to the [Google Earth Engine IDE](https://code.earthengine.
 1. Make a new repository in your GEE account with a name of your choosing. This is where the two JS files will be saved.
 
    - This is done by clicking the "Scripts" tab in the upper left corner. 
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/01.png' width = 250>
+<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/01.png' width = 200>
    
    - Then select the "NEW" button and a drop-down will appear, select "Repository".
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/02.png' width = 250>
+<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/02.png' width = 200>
    
    - A dialog box will open asking you to name it.
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/03.png' width = 300>
@@ -44,7 +44,7 @@ Once you have made it to the [Google Earth Engine IDE](https://code.earthengine.
    -  Name it and click "Create"
    
 2. Make a new script in the console by using the reset button's down arrow to clear the console. This button is found in the GEE console header.
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/04.png' width = 250>
+<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/04.png' width = 225>
 
 3. Copy and paste the "ee-lcb.js"  JavaScript file into the console, any basic text editor should work fine for copying.
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/05.png' width = 300>
@@ -63,13 +63,13 @@ Once you have made it to the [Google Earth Engine IDE](https://code.earthengine.
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/08.png' width = 300>
 
 9. On line 4 you will see a file path that points to a "ee-lcb.js" file. This file will need to edited to point to your "ee-lcb.js" file.
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/005.png' width = 400>
+<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/005.png' width = 500>
 
 10. You can find your full file path to your "ee-lcb.js" file by looking at what repository the file is in. It should look something like "users/yourname/foldername".
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/09.png' width = 300>
 
 11. Replace that file path on line 4 with your file path. Do not end the file path with a slash " / " end it with a colon " : ", and then the file name so it looks like this "users/yourname/foldername:ee-lcb.js"
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/10.png' width = 400>
+<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/10.png' width = 500>
 
 Before running the GEE script to generate images and observation data you need to make sure the feature collection file path points to your uploaded asset, and that the feature ID string is "uniqID". The feature collection path looks like:
 
