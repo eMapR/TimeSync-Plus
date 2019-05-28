@@ -63,7 +63,7 @@ Once you have made it to the [Google Earth Engine IDE](https://code.earthengine.
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/08.png' width = 300>
 
 9. On line 4 you will see a file path that points to a "ee-lcb.js" file. This file will need to edited to point to your "ee-lcb.js" file.
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/005.png' width = 500>
+<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/005.png' width = 700>
 
 10. You can find your full file path to your "ee-lcb.js" file by looking at what repository the file is in. It should look something like "users/yourname/foldername".
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/09.png' width = 300>
