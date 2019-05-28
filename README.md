@@ -28,48 +28,7 @@ Needs to have a unique ID field called "uniqID" - needs to be noted and entered 
 2. Upload shapefile Asset as table 
 
 ## Step 3: Run Google Earth Engine Script to generate data
-Once you have made it to the [Google Earth Engine IDE](https://code.earthengine.google.com/) you should make a new repository to store the GEE JavaScript files we will be using. Follow the steps below to create a repository, edit and run scripts. All the JavaScripts can be found in the GEE_JS directory here on Github.
-
-1. Make a new repository in your GEE account with a name of your choosing. This is where the two JS files will be saved.
-
-   - This is done by clicking the "Scripts" tab in the upper left corner. 
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/01.png' width = 200>
-   
-   - Then select the "NEW" button and a drop-down will appear, select "Repository".
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/02.png' width = 200>
-   
-   - A dialog box will open asking you to name it.
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/03.png' width = 300>
-   
-   -  Name it and click "Create"
-   
-2. Make a new script in the console by using the reset button's down arrow to clear the console. This button is found in the GEE console header.
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/04.png' width = 225>
-
-3. Copy and paste the "ee-lcb.js"  JavaScript file into the console, any basic text editor should work fine for copying.
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/05.png' width = 300>
-
-4. Click the save button in the GEE console header.
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/06.png' width = 200>
-
-5. A dialog box will appear and will want you to pick a location and to name the file. Choose the your new repository and name the new file "ee-lcb.js", and click "OK".
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/07.png' width = 350>
-
-6. The file will appear in the new repository.
-
-7. Repeat step 3 - 5 for the "TS-Plus_GetData.js" JavaScript file.
-
-8. Open "TS-Plus_GetData" in GEE by clicking the file in the repository.
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/08.png' width = 300>
-
-9. On line 4 you will see a file path that points to a "ee-lcb.js" file. This file will need to edited to point to your "ee-lcb.js" file.
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/005.png' width = 700>
-
-10. You can find your full file path to your "ee-lcb.js" file by looking at what repository the file is in. It should look something like "users/yourname/foldername".
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/09.png' width = 300>
-
-11. Replace that file path on line 4 with your file path. Do not end the file path with a slash " / " end it with a colon " : ", and then the file name so it looks like this "users/yourname/foldername:ee-lcb.js"
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/10.png' width = 500>
+Once you have made it to the [Google Earth Engine IDE](https://code.earthengine.google.com/) Follow the steps below to edit and run the scripts. All the JavaScripts can be found in the GEE_JS directory here on Github.
 
 Before running the GEE script to generate images and observation data you need to make sure the feature collection file path points to your uploaded asset, and that the feature ID string is "uniqID". The feature collection path looks like:
 
