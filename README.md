@@ -57,9 +57,9 @@ Here, you can define where the files and images get saved. Please, keep the defa
 
 ## Step 4: Download data from Google Drive
 
-Once all the tasks are completed there will be a folder in your Google Drive called TimeSync. To download the folder right click it and select download. This will create a zip folder and it will be downloaded to your computer. Make a new folder on your computer and name it 'tiles'. Then extract all the contents of the zip folder to 'tiles'.
+Once all the tasks are completed there will be a folder in your Google Drive called TimeSync. To download the folder right click it and select download. This will create a zip folder and it will be downloaded to your computer, and there may be multiple zipped folder depending of the size of your region of interest . Next, make a new folder on your computer and name it 'tiles'. Then extract all the contents of the zip folder or folders to the 'tiles' directory. If there was more than one zipped folders you may get a warning about there already being a TimeSync folder and concerns about merging them. This is fine go ahead and merge them.
 
-Next, you'll need to download the python files in our python folder, but it easier to just download the whole Time Sync Plus directory that way you have the files ready to go. You can do this by clicking the green button near the top of the page. Anyway, download them and then place 'gdal2tiles.py' and 'make_rgb_tms.py' in the 'tiles' folder so it looks like this:
+Next, you'll need to download the python files in our python folder on GitHub, but it easier to just download the whole Time Sync Plus directory that way you have the files ready to go. You can do this by clicking the green button near the top of the page. Anyway, download them and then place 'gdal2tiles.py' and 'make_rgb_tms.py' in the 'tiles' folder so it looks like this:
 
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/folder.JPG' width = 300>
 
