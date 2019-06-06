@@ -57,25 +57,42 @@ Here, you can define where the files and images get saved. Please, keep the defa
 
 ## Step 4: Download data from Google Drive
 
-Once all the tasks are completed there will be a folder in your Google Drive called TimeSync. To download the folder right click it and select download. This will create a zip folder and it will be downloaded to your computer, and there may be multiple zipped folder depending of the size of your region of interest . Next, make a new folder on your computer and name it 'tiles'. Then extract all the contents of the zip folder or folders to the 'tiles' directory. If there was more than one zipped folders you may get a warning about there already being a TimeSync folder and concerns about merging them. This is fine go ahead and merge them.
+Once all the tasks are completed there will be a folder in your Google Drive called TimeSync. To download the folder right click it and select download. This will create a zip folder and it will be downloaded to your computer, and there may be multiple zipped folder depending of the size of your region of interest. Next, make a new folder on your computer and name it 'tiles'. Then extract all the contents of the zip folder or folders to the 'tiles' directory. If there was more than one zipped folders you may get a warning about there already being a TimeSync folder and concerns about merging them. This is fine go ahead and merge them.
 
 Next, you'll need to download the python files in our python folder on GitHub, but it easier to just download the whole Time Sync Plus directory that way you have the files ready to go. You can do this by clicking the green button near the top of the page. Anyway, download them and then place 'gdal2tiles.py' and 'make_rgb_tms.py' in the 'tiles' folder so it looks like this:
 
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/folder.JPG' width = 300>
 
 
-## Step 5: Run Python data prep script
+## Step 5: Make annual image tile sets
 
-To Run `make_rgb_tms.py`: open your LT-Change-DB command prompt and go to tiles folder using the change directory command 'cd', and then add and run:
+Annual image data downloaded from Google Drive needs to be arranged for use in the TimeSync+ app.
+In this step you'll run a Python script to generate the required image tiles. The script is called
+`make_rgb_tms.py` and can be found in the "PythonScripts" directory in the folder of code you downloaded
+in a previous step. Here is the definition
 
-​            `python /full/file/path/to/tiles/make_rgb_tms.py /full/file/path/to/tiles/TimeSyncfolder`
+`python make_rgb_tms.py [downloadedImgDir] [maxZoomLevel]`
+
+Where: 
+
+- `downloadedImgDir` is full path to the folder where all of the image data dowloaded from Google Drive
+lives
+- `maxZoomLevel` is the maximum tile zoom level to produce. Between 13 and 16 are good. Depending on your latitude these zoom
+levels will appoximate full 30m resolution. Note that beyond level 13, the process can take a long time and create millions
+of files, depending on the size of the study area. We suggest trying 13 to start and if find you'd like more resolution, then
+rerun the process and increase the value by 1.
+
+
+To Run:
+
+​            `python /full/file/path/to/tiles/make_rgb_tms.py /full/file/path/to/tiles/TimeSyncfolder 14`
 
  
 
 This process will create a “tms” folder that will house the tile images.
 
 ------
-Once your done with the above process you'll need to make a new folder called 'TS-Plus' and place the 'tiles' directroy in it. TS-Plus will be the base of the directory and this where the config.txt file should be place along with 'create_sql_db.py' file and the 'TimeSyncPlus' application folder. the base directory should look like this:
+Once your done with the above process you'll need to make a new folder called 'TS-Plus' and place the 'tiles' directory in it. TS-Plus will be the base of the directory and this where the config.txt file should be place along with 'create_sql_db.py' file and the 'TimeSyncPlus' application folder. the base directory should look like this:
 
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/folder1.JPG' width = 200>
 
