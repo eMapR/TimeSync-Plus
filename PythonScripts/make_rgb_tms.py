@@ -58,7 +58,7 @@ def main(prepDir, maxZoom):
     print(name)
     rgbFiles = glob(os.path.join(prepDir,name+'*.tif'))
     if len(rgbFiles) == 0:
-      print('  No files found, skipping')
+      print('   No files found, skipping')
     else:
       bandsList = getBandList(rgbFiles[0])
       baseDir = os.path.dirname(rgbFiles[0])
