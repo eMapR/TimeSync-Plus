@@ -24,10 +24,10 @@ def mosaicFiles(files, bands, vrtFile):
   print (cmd)
   subprocess.call(cmd, shell = True)  #  changed Peter os:ubuntu
 
-def makesTiles(fn, folder):
+def makesTiles(fn, folder, maxZoom):
   fn = fn.replace('\\', '/')
   folder = folder.replace('\\', '/')
-  cmd = 'gdal2tiles.py -q -z 5-13 "'+fn+'" "'+folder+'"'
+  cmd = 'gdal2tiles.py -q -z 5-'+maxZoom+' "'+fn+'" "'+folder+'"' # 13
   args = [i.replace('"','') for i in cmd.split(' ')]
   gdalArgs = gdal.GeneralCmdLineProcessor( args )
   gdal2tiles.runit(gdalArgs)
@@ -50,27 +50,31 @@ def getYearEnds(prepDir):
   endYear = info['features'][0]['properties']['endYear']
   return([int(startYear), int(endYear)])
   
-def main(prepDir):
+def main(prepDir, maxZoom):
   names = ['rgbTC','rgb654','rgb543','rgb432']
   startYear, endYear = getYearEnds(prepDir)
   years = range(startYear, endYear+1)  
   for name in names:
     print(name)
     rgbFiles = glob(os.path.join(prepDir,name+'*.tif'))
-    bandsList = getBandList(rgbFiles[0])
-    baseDir = os.path.dirname(rgbFiles[0])
-    for year, bands in zip(years, bandsList):
-      print('   '+str(year))
-      thisDir = os.path.normpath(os.path.join(baseDir,'tms',name,str(year)))
-      thisVRT = os.path.normpath(os.path.join(thisDir,'rgbIMG.vrt'))
-      makeDir(thisDir)
-      mosaicFiles(rgbFiles, bands, thisVRT)
-      makesTiles(thisVRT, thisDir)
+    if len(rgbFiles) == 0:
+      print('  No files found, skipping')
+    else:
+      bandsList = getBandList(rgbFiles[0])
+      baseDir = os.path.dirname(rgbFiles[0])
+      for year, bands in zip(years, bandsList):
+        print('   '+str(year))
+        thisDir = os.path.normpath(os.path.join(baseDir,'tms',name,str(year)))
+        thisVRT = os.path.normpath(os.path.join(thisDir,'rgbIMG.vrt'))
+        makeDir(thisDir)
+        mosaicFiles(rgbFiles, bands, thisVRT)
+        makesTiles(thisVRT, thisDir, maxZoom)
 
       
 if __name__ == '__main__':
   prepDir = sys.argv[1]
-  main(prepDir) 
+  maxZoom = sys.argv[2]
+  main(prepDir, maxZoom) 
 
   
 
