@@ -17,15 +17,15 @@ TimeSync+ is a desktop application modeled after the original [TimeSync applicat
 
 ## Step 1: Make a shapefile
 
-Make a point or polygon shapefile. Either generate your own or use the [LT-ChangeDB](http:example.com) process.
+Make a point or polygon shapefile of disturbance areas. You will need to add a uniq id field to your shapefile called "uniqID" where each feature has a uniq ID. You can either generate your own shapefiles or use the [LT-ChangeDB](http:example.com) process to make distubance polygons for you. This shapefile will need to zipped in order to upload it to GEE.
 
-Needs to have a unique ID field called "uniqID" - needs to be noted and entered into following Earth Engine script
+Needs to have a unique ID field called "uniqID" - needs to be noted and entered into following Earth Engine script - noted ahead.
 
 
 ## Step 2: Upload the shapefile to Google Earth Engine
 
 1. Get an EE account
-2. Upload shapefile Asset as table 
+2. Upload zipped shapefile asset to GEE 
 
 ## Step 3: Run Google Earth Engine Script to generate data
 Once you have made it to the [Google Earth Engine IDE](https://code.earthengine.google.com/) Follow the steps below to edit and run the scripts. All the JavaScripts can be found in the GEE_JS directory here on Github.
