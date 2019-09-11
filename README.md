@@ -92,24 +92,12 @@ To Run:
 This process will create a “tms” folder that will house the tile images.
 
 ------
-Once your done with the above process you'll need to make a new folder called 'TS-Plus' and place the 'tiles' directory in it. TS-Plus will be the base of the directory and this where the config.txt file should be place along with 'create_sql_db.py' file and the 'TimeSyncPlus' application folder. the base directory should look like this:
+Once your done with the above process you'll need to make a new folder called 'TS-Plus' and place the 'tiles' directory in it. The TS-Plus folder will be the base of the directory and this where the config.txt file should be place along with 'create_sql_db.py' file and the 'TimeSyncPlus' application folder. The base directory should look like this:
 
 <img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/folder1.JPG' width = 200>
 
 
-To Run the “create_sql_db.py”: in your LT-Change-DB command prompt add and run:
-
- 
-
-​            `python \full\path\to\create_sql_db.py`
-
- 
-
-Once running it will prompt you to find the locations of the config text file and the location of the observations.geojson with file path dialog boxes. The geojson file is in the TimeSync folder where the images are. Once completed a sql database will be located in the base directory.
-
 ------
-
- 
 
  
 
@@ -185,7 +173,17 @@ you can add the key/value pair anywhere in the displaytables curly brackets '{ }
 Make sure the names between the display table and the event table are the same for it is case sensitive.
 Be sure to save the config.txt file.
 
-## Step 7: Start the App
+## Step 7: Create Database
+
+Depending on the size of your study area you may want to split your geojson into small sections. This can be done using the "jsonsplit.py". This python script can be run from the command line with.
+
+```sh
+python [path to python script] [path to your GEE geojson file] 
+```
+Once the script is running, it will tell how many features (polygons) are in your geojson file, and will ask how many split files you want.  
+
+
+## Step 8: Start the App
 
 The application location is in the TS-Plus folder in the base directory. In the TS-Plus folder there is a file named 'Plus'. Double click this file to open the TS-Plus application.
 
