@@ -175,10 +175,10 @@ Be sure to save the config.txt file.
 
 ## Step 7: Opitional: Split Geojson file 
 
-Depending on the size of your study area you may want to split your geojson into small sections. This can be done using the "jsonsplit.py". This python script can be run from the command line with.
+Depending on the size of your study area you may want to split your geojson into small sections. If you decide to split your geojson first you need to make a folder called geojson in base directory. Then run "jsonsplit.py". This python script can be run from the command line with.
 
 ```sh
-python [path to python script] [path to your GEE geojson file] 
+python [path to python script] [path to your GEE geojson file] [path to your new geojson directory]
 ```
 Once the script is running, it will tell how many features (polygons) are in your geojson file, and will ask how many split files you want. An example would be if my geojson file had 286 features, and if I wanted to split it into three files, I would enter 3 when promted by the script. This would give me three geojson files with one with 96 features and two with 95 feautures. Next, we will make databases for our geojson file or files.  
 
