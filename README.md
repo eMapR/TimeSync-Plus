@@ -173,17 +173,22 @@ you can add the key/value pair anywhere in the displaytables curly brackets '{ }
 Make sure the names between the display table and the event table are the same for it is case sensitive.
 Be sure to save the config.txt file.
 
-## Step 7: Create Database
+## Step 7: Opitional: Split Geojson file 
 
 Depending on the size of your study area you may want to split your geojson into small sections. This can be done using the "jsonsplit.py". This python script can be run from the command line with.
 
 ```sh
 python [path to python script] [path to your GEE geojson file] 
 ```
-Once the script is running, it will tell how many features (polygons) are in your geojson file, and will ask how many split files you want.  
+Once the script is running, it will tell how many features (polygons) are in your geojson file, and will ask how many split files you want. An example would be if my geojson file had 286 features, and if I wanted to split it into three files, I would enter 3 when promted by the script. This would give me three geojson files with one with 96 features and two with 95 feautures. Next, we will make databases for our geojson file or files.  
 
 
-## Step 8: Start the App
+## Step 8: Create Database(s) from geojson(s)
+
+
+
+
+## Step 9: Start the App
 
 The application location is in the TS-Plus folder in the base directory. In the TS-Plus folder there is a file named 'Plus'. Double click this file to open the TS-Plus application.
 
