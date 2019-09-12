@@ -108,9 +108,9 @@ Once your done with the above process you'll need to make a new folder called 'T
 
 This text file was a YAML file, but due to the limitation of environment  parameters a more basic form was needed. Unfortunately, this means that editing this file may be more daunting for some. 
 
-In order for the user to have flexibility in attribution, a text file is needed so that the user can define features to attribute. The config.txt file is used just for that purpose. In this config.txt file the user can edit names of fields and values which are representative of how the event table is structured and how attribution properties function in the application.
+In order for the user to have some flexibility in attribution, a text file is needed so that the user can define features to attribute. The config.txt file is used just for that purpose. In this config.txt file the user can edit names of fields and values which are representative of how the event table is structured and how attribution properties function in the application.
 
-The config.txt file is a python dictionary, and in this dictionary there are three main pieces a 'polygonTable', 'displayTable', and 'eventTable'. Of these there are two objects the user can add to, and they are the "displayTable" and the "eventTable". The "polygonTable" should not be changed! To make changes to the config.txt file follow the example below.
+The config.txt file is a python dictionary, and in this dictionary there are three main pieces a 'polygonTable', 'displayTable', and 'eventTable'. Of these there are two objects the user can add to, and they are the "displayTable" and the "eventTable". The "polygonTable" should not be changed! However, there two labels,YOD and Comment , in the displaytable and the eventTable that should not be changed.To make changes to the config.txt file follow the example below.
 
 This is what the config.txt file looks like:
 
@@ -120,9 +120,9 @@ This is what the config.txt file looks like:
 {
 'polygonTable': ['plotid', 'geo', 'json'], 
 'displayTable': {
-	'Comment': ['submit'], 
+	'Comment': [''], 
 	'ChangeAgent': ['none', 'unknown', 'regrowth', 'fire', 'logging','flooding', 'pine bug', 'false reading'], 
-	'YOD': ['year', 'false reading'], 
+	'YOD': [''], 
 	'User': ['Peter', 'Katie'],
 	'Confidance': ['low', 'med', 'high']}, 
 'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'Confidance', 'User', 'Comment']
@@ -154,9 +154,9 @@ you can add the key/value pair anywhere in the displaytables curly brackets '{ }
 {
 'polygonTable': ['plotid', 'geo', 'json'], 
 'displayTable': {
-	'Comment': ['submit'], 
+	'Comment': [''], 
 	'ChangeAgent': ['none', 'unknown', 'regrowth', 'fire', 'logging', 'flooding', 'pine bug', 'false reading'], 
-	'YOD': ['year', 'false reading'], 
+	'YOD': [''], 
 	'User': ['Peter', 'Katie'],
 	'State': ['forest','urban','barren'], 
 	'Confidance': ['low', 'med', 'high']}, 
