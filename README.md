@@ -38,6 +38,8 @@ and the feature ID looks like:
 
 `lcb.props['featureID'] = 'uniqID'`
 
+You can also change other features like the start year.
+
 Next click "Run" at the top of the console.
 
 
@@ -99,15 +101,8 @@ Once your done with the above process you'll need to make a new folder called 'T
 
 ------
 
- 
-
-   
-
-
 
 ## Step 6: Edit App options text file
-
-
 
 
 
