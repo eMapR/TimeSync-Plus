@@ -175,13 +175,11 @@ Depending on the size of your study area you may want to split your geojson into
 ```sh
 python [path to python script] [path to your GEE geojson file] [path to your new geojson directory]
 ```
-Once the script is running, it will tell how many features (polygons) are in your geojson file, and will ask how many split files you want. An example would be if my geojson file had 286 features, and if I wanted to split it into three files, I would enter 3 when promted by the script. This would give me three geojson files with one with 96 features and two with 95 feautures. Next, we will make databases for our geojson file or files.  
+Once the script is running, it will tell how many features (polygons) are in your geojson file, and will ask how many split files you want. An example would be if my geojson file had 5362 features, and if I wanted each geojson to have about 500 features I would divide 5362 by 500 and round up from 10.724 to 11 and use this value. This would give me 11 geojson files with each file have ~487 feautures per file. Next, we will make databases for our geojson file or files.  
 
 
 ## Step 8: Create Database(s) from geojson(s)
-
-
-
+Now, we will make SQL Databases from our geojoson files. This is done by running the geojsonToSqlDB.py script.
 
 ## Step 9: Start the App
 
