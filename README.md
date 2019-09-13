@@ -191,7 +191,7 @@ Once opened, a dialog box will appear and the user will need to locate the SQL d
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/01_DB_box.JPG' width="400">
 
-Clicking on one of the plot list identification values, will render the spectral and spatial data. This may take a few moments. Once loaded, the user will see that plot list ID value is highlighted, and spectral plot in the upper center is populated, and that there are several images chips with the same polygon geometry in the upper right bottom sections. 
+Clicking on one of the plot list identification values, will render the spectral and spatial data. This may take a few moments. Once loaded, the user will see that plot list ID value is highlighted, and spectral plot in the upper center is populated, and that there are several images chips with the same polygon geometry in the upper right and bottom sections. If no images appear in the bottom section make sure your selected database is in the same directory as your tiles folder. 
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist.JPG' width="200"> 
 
