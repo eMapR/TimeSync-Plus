@@ -183,11 +183,9 @@ Now, we will make SQL Databases from our geojoson files. This is done by running
 
 ## Step 9: Start the App
 
-The application location is in the TS-Plus folder in the base directory. In the TS-Plus folder there is a file named 'Plus'. Double click this file to open the TS-Plus application.
+The application location is in your zipped TSP+4 file. Decompresses or unzipped the zipped file, then open the unpackaged folder. Continue opening folder until you come to a folder with a variety files. Here, there will be a TSP+4.2.exe file. Double click that file.   
 
-
-
-Once opened, a dialog box will appear and the user will need to locate the SQL database that was created in step 5. When the SQL file is found double click it and the dialog box will disappear. After a few moments the plot list will be populated with polygon or point identification values.
+Once opened, a dialog box will appear and the user will need to locate the SQL database they created. When the SQL file is found double click it, and the dialog box will disappear. After a few moments the plot list will be populated with polygon or point identification values.
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/01_DB_box.JPG' width="400">
 
