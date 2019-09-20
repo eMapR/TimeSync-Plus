@@ -277,7 +277,7 @@ def main():
                     input_values_table(conn, main)
             else:
                 print("Error! cannot create the database connection.")
-
+    print("done")
 
 if __name__ == '__main__':
     main()
