@@ -19,13 +19,32 @@ TimeSync+ is a desktop application modeled after the original [TimeSync applicat
 
 Make a point or polygon shapefile of disturbance areas. You will need to add a uniq id field to your shapefile called "uniqID" where each feature has a uniq ID. You can either generate your own shapefiles or use the [LT-ChangeDB](http:example.com) process to make distubance polygons for you. This shapefile will need to zipped in order to upload it to GEE.
 
-Needs to have a unique ID field called "uniqID" - needs to be noted and entered into following Earth Engine script - noted ahead.
-
-
 ## Step 2: Upload the shapefile to Google Earth Engine
 
-1. Get an EE account
-2. Upload zipped shapefile asset to GEE 
+ - Do you have a GEE (Google Earth Engine) account?
+    - [Make a GEE account](https://code.earthengine.google.com/)
+  - How to upload a zipped shapefile to GEE.
+    - From the main GEE page click "Assets" in the upper left panel.
+    - Click the "NEW" button under the "Assets" Tab. 
+    - A dropdown box will appear.
+    - Click the shapefile button. 
+    - A dialog box will appear.
+    - Click "SELECT".
+    - A file path way dialog box will appear.
+    - Find the location of your zipped shapefile.
+    - Double click your file.
+    - Define the directory, in Assets, where you would like to save your shapefile asset.
+      -How to make a new directory in GEE.
+	- From the assets tab click "NEW".
+	- In the dropdown box click "Folder".
+	- a "New Folder" dialog box will appear.
+	- Enter the new folder's name.
+	- Click Ok.
+	- A folder with your defined name will appear in Assets. 
+    - Click upload.
+    - Under the "Tasks" in the upper right panel you can check the process of your uploading asset.
+    - Once the task is complete you will be able to locate the shapefile asset in your Assets Tab.
+
 
 ## Step 3: Run Google Earth Engine Script to generate data
 Once you have made it to the [Google Earth Engine IDE](https://code.earthengine.google.com/) Follow the steps below to edit and run the scripts. All the JavaScripts can be found in the GEE_JS directory here on Github.
