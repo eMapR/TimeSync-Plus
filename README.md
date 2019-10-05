@@ -21,28 +21,28 @@ Make a point or polygon shapefile of disturbance areas. You will need to add a u
 
 ## Step 2: Upload the shapefile to Google Earth Engine
 - Do you have a GEE (Google Earth Engine) account?
-  - - [Make a GEE account](https://code.earthengine.google.com/)
+  - [Make a GEE account](https://code.earthengine.google.com/)
 - How to upload a zipped shapefile to GEE.
-    - From the main GEE page click "Assets" in the upper left panel.
-    - Click the "NEW" button under the "Assets" Tab. 
-    - A dropdown box will appear.
-    - Click the shapefile button. 
-    - A dialog box will appear.
-    - Click "SELECT".
-    - A file path way dialog box will appear.
-    - Find the location of your zipped shapefile.
-    - Double click your file.
-    - Define the directory, in Assets, where you would like to save your shapefile asset
-	- How to make a new directory in GEE.
-	-- From the assets tab click "NEW".
-	-- In the dropdown box click "Folder".
-	-- a "New Folder" dialog box will appear.
-	-- Enter the new folder's name.
-	-- Click Ok.
-	-- A folder with your defined name will appear in Assets. 
-    - Click upload.
-    - Under the "Tasks" in the upper right panel you can check the process of your uploading asset.
-    - Once the task is complete you will be able to locate the shapefile asset in your Assets Tab.
+  - From the main GEE page click "Assets" in the upper left panel.
+  - Click the "NEW" button under the "Assets" Tab. 
+  - A dropdown box will appear.
+  - Click the shapefile button. 
+  - A dialog box will appear.
+  - Click "SELECT".
+  - A file path way dialog box will appear.
+  - Find the location of your zipped shapefile.
+  - Double click your file.
+  - Define the directory, in Assets, where you would like to save your shapefile asset
+  - How to make a new directory in GEE.
+    - From the assets tab click "NEW".
+	- In the dropdown box click "Folder".
+	-  A "New Folder" dialog box will appear.
+	-  Enter the new folder's name.
+	-  Click Ok.
+	-  A folder with your defined name will appear in Assets. 
+  - Click upload.
+  - Under the "Tasks" in the upper right panel you can check the process of your uploading asset.
+  - Once the task is complete you will be able to locate the shapefile asset in your Assets Tab.
 
 
 ## Step 3: Run Google Earth Engine Script to generate data
