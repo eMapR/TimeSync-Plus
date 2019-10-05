@@ -1,0 +1,2 @@
+locaton for data that was downloaded from your google drive:
+4 images (rgb654 rgb543 rgbTC rbg432) and 3 files (observationsInfo, Observations-KML, Observations_GeoJSON)
