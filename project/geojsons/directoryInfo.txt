@@ -1,0 +1,1 @@
+locaton for split geojson files. 
