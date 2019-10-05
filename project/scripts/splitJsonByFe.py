@@ -59,7 +59,7 @@ def geoJsonSplit(geojson,outdir):
             	json.dump(geojson2,f,indent=4,sort_keys=True)
         counter += 1
 
-	print("done")
+        print("done")
 	
 
 def main():          
