@@ -132,31 +132,6 @@ NOTE: The 13 represent the highest zoomlevel of tiles that will be created. A va
 - Once complete a "tms" folder will be in the TimeSync folder as in the file structure.
 
 
-## Step 7: Edit App options text file
-
-The config.txt file in the database folder is used to define names for attribution.  
-
-The config.txt file is a python dictionary, and in this dictionary there are three main pieces a 'polygonTable', 'displayTable', and 'eventTable'. Only "displayTable" and the "eventTable" should be edited by the user. To make changes to the config.txt file follow the example below.
-
-This is what the config.txt file looks like:
-
-------
-
-```
-{
-'polygonTable': ['plotid', 'geo', 'json'], 
-'displayTable': {
-    'Comment': [''],
-    'ChangeType': ['Annual Variability', 'Agricultural', 'Agricultural Clearing', 'Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown'], 
-    'Event_Year': [''],
-    'Event_Name': [''],
-    'Valid_name': ['APlatel','CBarsch','CCopass','GStonecipher','NAntonova'],
-    'Confidence': ['3', '2', '1'], 
-    'Alt_type': ['Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown']},
-'eventTable': ['plotId', 'Valid_Date', 'LT_YOD', 'Event_Year', 'Event_Name', 'ChangeType', 'Confidence', 'Alt_type', 'Comment']
-}
-```
-
 
 
 ## Step 7: (Optional but suggested for large areas) Split Geojson by year or number of features:
@@ -183,6 +158,33 @@ Out directory is real.
 What is the starting year? :1986
 What is the ending year? :2018
 ```
+## Step 8: Edit App options text file
+
+The config.txt file in the database folder is used to define names for attribution.  
+
+The config.txt file is a python dictionary, and in this dictionary there are three main pieces a 'polygonTable', 'displayTable', and 'eventTable'. Only "displayTable" and the "eventTable" should be edited by the user. To make changes to the config.txt file follow the example below.
+
+This is what the config.txt file looks like:
+
+------
+
+```
+{
+'polygonTable': ['plotid', 'geo', 'json'], 
+'displayTable': {
+    'Comment': [''],
+    'ChangeType': ['Annual Variability', 'Agricultural', 'Agricultural Clearing', 'Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown'], 
+    'Event_Year': [''],
+    'Event_Name': [''],
+    'Valid_name': ['APlatel','CBarsch','CCopass','GStonecipher','NAntonova'],
+    'Confidence': ['3', '2', '1'], 
+    'Alt_type': ['Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown']},
+'eventTable': ['plotId', 'Valid_Date', 'LT_YOD', 'Event_Year', 'Event_Name', 'ChangeType', 'Confidence', 'Alt_type', 'Comment']
+}
+```
+
+
+
 
 ## Step 9: Create Database(s) from geojson(s)
 Now, we will make SQL Databases from our geojoson files. This is done by running the geojsonToSqlDB.py script. The script will ask for the location of two files. The config text file and a geojson directory (just click on the a geojson file in the directory). This will create an equal number of databases to the number of geojson files. The databases will be placed in directory with the tiles folder.
