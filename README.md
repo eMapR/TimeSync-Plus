@@ -45,6 +45,47 @@ Make a point or polygon shapefile of disturbance areas. You will need to add a u
   - Under the "Tasks" in the upper right panel you can check the process of your uploading asset.
   - Once the task is complete you will be able to locate the shapefile asset in your Assets Tab.
 
+## Step 3: Setting up a project directory locally
+
+- download the TimeSync-Plus GitHub repository.
+- Go to https://github.com/eMapR/TimeSync-Plus.
+- Click the green button "Clone or Download".
+- A dropdown box will appear.
+- Click download "ZIP".
+- Find and unzipped download file.
+-Find the project directory in the unzipped TimeSync-Plus folder.
+***Note: This directory is where all your pre-project processing will take place ***
+File Structure:
+```
+project
+|              
+|---------|databases 
+|              config.txt
+|              
+|---------|scripts
+              gdal2tiles.py
+              geojsonToSqlDB.py
+              make_rgb_tms.py
+              splitJsonByFe.py
+              splitJsonByYear.py
+|
+|----------|geojsons
+|               *** export location for split geojson files ***
+|
+|----------|tiles
+           |
+           |-------|TimeSync
+                   |      observationsInfo.geojson
+                   |      observations.geojson
+                   |      observations.kml
+                   | 
+                   |-------|tms
+                           |
+                           |rgb543  ***years>>>zoomlevels>>>location>>>images.png***
+                           |rgb654  ***years>>>zoomlevels>>>location>>>images.png***
+                           |rgbTC   ***years>>>zoomlevels>>>location>>>image.png***
+                           |rgb432  ***years>>>zoomlevels>>>location>>>image.png***
+```
 
 ## Step 3: How to Run Google Earth Engine Script to generate data
 
