@@ -10,7 +10,6 @@ TimeSync+ is a desktop application modeled after the original [TimeSync applicat
 - Slippy map zoom and pan image chips
 - Four RGB image chip display option
 - Total user-control over what information can be collected
-- Two new data collection modes: event and observation (original segmentation as well)
 - a context map
 - Modern web-like interface
 - Uses Google Earth Engine to process data
