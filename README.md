@@ -171,7 +171,6 @@ NOTE For Below: 6 , will output 6 geojson files with about 893 features per spli
 >>>There are 5362 features in your GEE geojson file. How many split geojson files, which will become databases, would you like? 6
 ```
 
-   The split geojson files will be in the geojson file as defined by ../geojons/ in the python syntax.
   - Split By Year of Detection.
     - Open a terminal or command prompt.
     - Navigate to script folder in the project directory with your terminal.
@@ -184,8 +183,6 @@ Out directory is real.
 What is the starting year? :1986
 What is the ending year? :2018
 ```
-- The split geojson files will be in the geojson file as defined by ../geojons/ in the python syntax.
-
 
 ## Step 9: Create Database(s) from geojson(s)
 Now, we will make SQL Databases from our geojoson files. This is done by running the geojsonToSqlDB.py script. The script will ask for the location of two files. The config text file and a geojson directory (just click on the a geojson file in the directory). This will create an equal number of databases to the number of geojson files. The databases will be placed in directory with the tiles folder.
