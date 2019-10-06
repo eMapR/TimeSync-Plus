@@ -45,7 +45,31 @@ Make a point or polygon shapefile of disturbance areas. You will need to add a u
   - Under the "Tasks" in the upper right panel you can check the process of your uploading asset.
   - Once the task is complete you will be able to locate the shapefile asset in your Assets Tab.
 
-## Step 3: Setting up a project directory locally
+
+## Step 3: How to Run Google Earth Engine Script to generate data
+
+- Go to [GEE](https://code.earthengine.google.com/).
+- If don't have repository access go to the links below.
+    - [Support Module](https://code.earthengine.google.com/?accept_repo=users/jstnbraaten/modules)
+    - [TS Plus GetData](https://code.earthengine.google.com/691d2d6e525772f97f1d6e74d271fcaf)
+- Click on the "Scripts" Tab in the upper left panel.
+- Open "Reader" the the "Scripts" Tab
+- Open "TS_Plus_GetData.js"
+- In the upper center panel verify that line 6 points to  
+	 `users/jstnbraaten/modules:ee-lcb.js`
+- There are a variety of parameters that can be changed and there is a brief description of each on the same line as the parameters value. 
+- In the upper center panel edit line 16 to your file path string of your shapefile asset.
+- Once your happy with your parameter adjustments (if needed) click "Run" in the upper right portion of the upper center panel
+- After a few moments the "Tasks" Tab will flash yellow
+- Click the "Tasks" Tab.
+- In the "Tasks" there will be 7 tasks: 4 images (rgb654 rgb543 rgbTC rbg432) and 3 files (observationsInfo, Observations-KML, Observations_GeoJSON).
+- Click on each of the "RUN" Tabs.
+- A Tasks dialog box will appear
+- Double check Drive folder (the folder where it will be saved on your Google Drive)
+- Click the "Run" Tab.
+- A rotating gear will appear next to the task.
+- repeat for each task, keeping the Drive folder the same for each task.
+## Step 4: Setting up a project directory locally
 
 - download the TimeSync-Plus GitHub repository.
 - Go to https://github.com/eMapR/TimeSync-Plus.
@@ -87,89 +111,25 @@ project
                            |rgb432  ***years>>>zoomlevels>>>location>>>image.png***
 ```
 
-## Step 3: How to Run Google Earth Engine Script to generate data
+## Step 5: Download data from Google Drive
+- Go to your Google Drive .
+- Find the location of your Drive folder from step 3.
+- Right click folder.
+- Select Download from the dropdown box.
+- A download process box will appear in the lower right.
+- Once downloading is complete. Unzip the file and name the folder "TimeSync".
+- Place the "TimeSync" folder in the "tiles" folder of the "project" directory so it looks like the structure above.
 
-- Go to [GEE](https://code.earthengine.google.com/).
-  - If don't have repository access go to the links below.
-    - [Support Module](https://code.earthengine.google.com/?accept_repo=users/jstnbraaten/modules)
-    - [TS Plus GetData](https://code.earthengine.google.com/691d2d6e525772f97f1d6e74d271fcaf)
-- Click on the "Scripts" Tab in the upper left panel.
-- Open "Reader" the the "Scripts" Tab
-- Open "TS_Plus_GetData.js"
-- In the upper center panel verify that line 6 points to  
-	 `users/jstnbraaten/modules:ee-lcb.js`
-- There are a variety of parameters that can be changed and there is a brief description of each on the same line as the parameters value. 
-- In the upper center panel edit line 16 to your file path string to your shapefile asset.
--the code line label can be seen in the left position of the upper center panel.
-- Once happy with your parameter adjustments (if needed)
-
--Click "Run" in the upper right portion of the upper center panel
-
-- After a few moments the "Tasks" Tab will flash yellow
-
-- Click the "Tasks" Tab.
-
-- In the "Tasks" there will be 7 tasks: 4 images (rgb654 rgb543 rgbTC rbg432) and 3 files (observationsInfo, Observations-KML, Observations_GeoJSON)
-
-*** describe each file ***.............................................................................More
-
-- Click on each of the "RUN" Tabs.
-
-- A Tasks dialog box will appear
-
-- Double check Drive folder (the folder where it will be saved on your Google Drive)
-
-- Click the "Run" Tab.
-
-- A rotating gear will appear next to the task.
-
-- repeat for each task, keeping the Drive folder the same for each task.
-
-
-
-## Step 4: Download data from Google Drive
-
-Once all the tasks are completed there will be a folder in your Google Drive called TimeSync. To download the folder right click it and select download. This will create a zip folder and it will be downloaded to your computer, and there may be multiple zipped folder depending of the size of your region of interest. Next, make a new folder on your computer and name it 'tiles'. Then extract all the contents of the zip folder or folders to the 'tiles' directory. If there was more than one zipped folders you may get a warning about there already being a TimeSync folder and concerns about merging them. This is fine go ahead and merge them.
-
-Next, you'll need to download the python files in our python folder on GitHub, but it easier to just download the whole Time Sync Plus directory that way you have the files ready to go. You can do this by clicking the green button near the top of the page. Anyway, download them and then place 'gdal2tiles.py' and 'make_rgb_tms.py' in the 'tiles' folder so it looks like this:
-
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/folder.JPG' width = 300>
-
-
-## Step 5: Make annual image tile sets
-
-Annual image data downloaded from Google Drive needs to be arranged for use in the TimeSync+ app.
-In this step you'll run a Python script to generate the required image tiles. The script is called
-`make_rgb_tms.py` and can be found in the "PythonScripts" directory in the folder of code you downloaded
-in a previous step. Here is the definition
-
-`python make_rgb_tms.py [downloadedImgDir] [maxZoomLevel]`
-
-Where: 
-
-- `downloadedImgDir` is full path to the folder where all of the image data dowloaded from Google Drive
-lives
-- `maxZoomLevel` is the maximum tile zoom level to produce. Between 13 and 16 are good. Depending on your latitude these zoom
-levels will appoximate full 30m resolution. Note that beyond level 13, the process can take a long time and create millions
-of files, depending on the size of the study area. We suggest trying 13 to start and if find you'd like more resolution, then
-rerun the process and increase the value by 1.
-
-
-To Run:
-
-​            `python /full/file/path/to/tiles/make_rgb_tms.py /full/file/path/to/tiles/TimeSyncfolder 14`
-
- 
-
-This process will create a “tms” folder that will house the tile images.
-
-------
-Once your done with the above process you'll need to make a new folder called 'TS-Plus' and place the 'tiles' directory in it. The TS-Plus folder will be the base of the directory and this where the config.txt file should be place along with 'create_sql_db.py' file and the 'TimeSyncPlus' application folder. The base directory should look like this:
-
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/folder1.JPG' width = 200>
-
-
-------
+## Step 6: Make annual image tile sets
+- Open a terminal or command prompt.
+- Navigate to script folder in the project directory with your terminal.
+- In the terminal enter as follows and pertains to your operating system:
+```
+python make_rgb_tms.py ../tiles/TimeSync/ 13
+NOTE: The 13 represent the highest zoomlevel of tiles that will be created. A value between 
+12 to 15 is suggested.   
+```
+- Once complete a "tms" folder will be in the TimeSync folder as in the file structure.
 
 
 ## Step 6: Edit App options text file
