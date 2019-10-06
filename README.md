@@ -134,7 +134,7 @@ NOTE: The 13 represent the highest zoomlevel of tiles that will be created. A va
 
 
 
-## Step 7: (Optional but suggested for large areas) Split Geojson by year or number of features:
+## Step 7: (Optional but suggested for large areas) Split Geojson by year or number of features PYTHON 2.7:
 
 - Split By Feature:
   - Open a terminal or command prompt.
@@ -186,10 +186,10 @@ This is what the config.txt file looks like:
 The keys in the "displayTable" are names that will correspond to a field name in a CSV file and the values will be the selectable values for that field. When 'displayTable' keys match 'eventTable' values they will be display in the application as  attribution buttons.  There are some special key value pairs that allow a text box to be available as an attribution style.  Those pairs are "'Comment': [''],  Event_Year': [''], and 'Event_Name': ['']" . These key pairs can be removed from the config.txt file if a text box is not need.
 
 
-## Step 9: Create Database(s) from geojson(s)
+## Step 9: Create Database(s) from geojson(s) PYTHON 2.7
 - Open a terminal or command prompt.
 - Navigate to script folder in the project directory with your terminal.
-- In the terminal enter as follows and pertains to your operating system:
+- In the terminal enter as follows:
 ```
 python geojsonToSqlDB.py
 ```
