@@ -63,11 +63,11 @@ project
 |              config.txt
 |              
 |---------|scripts
-              gdal2tiles.py
-              geojsonToSqlDB.py
-              make_rgb_tms.py
-              splitJsonByFe.py
-              splitJsonByYear.py
+|              gdal2tiles.py
+|              geojsonToSqlDB.py
+|              make_rgb_tms.py
+|              splitJsonByFe.py
+|              splitJsonByYear.py
 |
 |----------|geojsons
 |               *** export location for split geojson files ***
