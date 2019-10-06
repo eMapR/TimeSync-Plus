@@ -132,9 +132,9 @@ NOTE: The 13 represent the highest zoomlevel of tiles that will be created. A va
 - Once complete a "tms" folder will be in the TimeSync folder as in the file structure.
 
 
-## Step 6: Edit App options text file
+## Step 7: Edit App options text file
 
-the config.txt file in the database folder is used to define names for attribution.  
+The config.txt file in the database folder is used to define names for attribution.  
 
 The config.txt file is a python dictionary, and in this dictionary there are three main pieces a 'polygonTable', 'displayTable', and 'eventTable'. Only "displayTable" and the "eventTable" should be edited by the user. To make changes to the config.txt file follow the example below.
 
@@ -157,62 +157,40 @@ This is what the config.txt file looks like:
 }
 ```
 
-------
 
 
+## Step 7: (Optional but suggested for large areas) Split Geojson by year or number of features:
 
-
-If we wanted to add a 'State' field to our table we would need to add " 'State', " to the 'eventTable' list. A list contain the values in the square brackets "[ ]". In the event table only add values after 'LT_YOD'. Once we add 'State' our event table line would look like this:
-
-------
-
-`'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'State', Confidance', 'User', 'Comment']`
-
-------
-
-You can add the " 'State', " value anywhere in the list aslong as it is after " 'LT_YOD', ". Next, if we want to be able to attribute our new feild we need to add a 'State' key to our display table object. The syntax is a key and value pair. The key stands alone in parenthesis with a colon after it followed by a list of values. In out case 'State' would be the key, and the state types would be our values as in the example below. 
-
-------
-
- `'State': ['forest','urban','barren']`
-
-------
-
-you can add the key/value pair anywhere in the displaytables curly brackets '{ }'. Our new config.txt looks like this now.
-
+- Split By Feature:
+  - Open a terminal or command prompt.
+  - Navigate to script folder in the project directory with your terminal.
+  - In the terminal enter as follows and pertains to your operating system:
+```
+"python splitJsonByFe.py ../tiles/TimeSync/observations.geojson ../geojsons/" 
+NOTE For Below: 6 , will output 6 geojson files with about 893 features per split geojson file
+>>>There are 5362 features in your GEE geojson file. How many split geojson files, which will become databases, would you like? 6
 ```
 
-{
-'polygonTable': ['plotid', 'geo', 'json'], 
-'displayTable': {
-	'Comment': [''], 
-	'ChangeAgent': ['none', 'unknown', 'regrowth', 'fire', 'logging', 'flooding', 'pine bug', 'false reading'], 
-	'YOD': [''], 
-	'User': ['Peter', 'Katie'],
-	'State': ['forest','urban','barren'], 
-	'Confidance': ['low', 'med', 'high']}, 
-'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'Confidance', 'State', 'User', 'Comment']
-}
+   The split geojson files will be in the geojson file as defined by ../geojons/ in the python syntax.
+  - Split By Year of Detection.
+    - Open a terminal or command prompt.
+    - Navigate to script folder in the project directory with your terminal.
+    - In the terminal enter as follows and pertains to your operating system:
 ```
-
-------
-Make sure the names between the display table and the event table are the same for it is case sensitive.
-Be sure to save the config.txt file.
-
-## Step 7: Opitional: Split Geojson file 
-
-Depending on the size of your study area you may want to split your geojson into small sections. If you decide to split your geojson first you need to make a folder called geojson in base directory. Then run "jsonsplit.py". This python script can be run from the command line with.
-
-```sh
-python [path to python script] [path to your GEE geojson file] [path to your new geojson directory]
+"python splitJsonByYear.py ../tiles/TimeSync/observations.geojson ../geojsons/"
+NOTE for below :: 1986 to 2018 will make a geojson file for that range of years. 1992 to 1992 would return one geojson file for 1992
+Reading geojson file.
+Out directory is real.
+What is the starting year? :1986
+What is the ending year? :2018
 ```
-Once the script is running, it will tell how many features (polygons) are in your geojson file, and will ask how many split files you want. An example would be if my geojson file had 5362 features, and if I wanted each geojson to have about 500 features I would divide 5362 by 500 and round up from 10.724 to 11 and use this value. This would give me 11 geojson files with each file have ~487 feautures per file in the geojson directory. Next, we will make databases for our geojson file or files.  
+- The split geojson files will be in the geojson file as defined by ../geojons/ in the python syntax.
 
 
-## Step 8: Create Database(s) from geojson(s)
+## Step 9: Create Database(s) from geojson(s)
 Now, we will make SQL Databases from our geojoson files. This is done by running the geojsonToSqlDB.py script. The script will ask for the location of two files. The config text file and a geojson directory (just click on the a geojson file in the directory). This will create an equal number of databases to the number of geojson files. The databases will be placed in directory with the tiles folder.
 
-## Step 9: Start the App
+## Step 10: Start the App
 
 The application location is in your zipped TSP+4 file. Decompresses or unzipped the zipped file, then open the unpackaged folder. Continue opening folder until you come to a folder with a variety files. Here, there will be a TSP+4.2.exe file. Double click that file.   
 
