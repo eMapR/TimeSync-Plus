@@ -1,3 +1,4 @@
+
 # TimeSync-Plus
 TimeSync+ is an application for gathering point and polygon spectral temporal information from Landsat time series data into a database.
 
@@ -19,7 +20,7 @@ TimeSync+ is a desktop application modeled after the original [TimeSync applicat
 
 Make a point or polygon shapefile of disturbance areas. You will need to add a uniq id field to your shapefile called "uniqID" where each feature has a uniq ID. You can either generate your own shapefiles or use the [LT-ChangeDB](http:example.com) process to make distubance polygons for you. This shapefile will need to zipped in order to upload it to GEE.
 
-## Step 2: Upload the shapefile to Google Earth Engine
+## Step 2: How to Upload the shapefile to Google Earth Engine
 - Do you have a GEE (Google Earth Engine) account?
   - [Make a GEE account](https://code.earthengine.google.com/)
 - How to upload a zipped shapefile to GEE.
@@ -45,33 +46,43 @@ Make a point or polygon shapefile of disturbance areas. You will need to add a u
   - Once the task is complete you will be able to locate the shapefile asset in your Assets Tab.
 
 
-## Step 3: Run Google Earth Engine Script to generate data
-Once you have made it to the [Google Earth Engine IDE](https://code.earthengine.google.com/) Follow the steps below to edit and run the scripts. All the JavaScripts can be found in the GEE_JS directory here on Github.
+## Step 3: How to Run Google Earth Engine Script to generate data
 
-Before running the GEE script to generate images and observation data you need to make sure the feature collection file path points to your uploaded asset, and that the feature ID string is "uniqID". The feature collection path looks like:
+- Go to [GEE](https://code.earthengine.google.com/).
+  - If don't have repository access go to the links below.
+    - [Support Module](https://code.earthengine.google.com/?accept_repo=users/jstnbraaten/modules)
+    - [TS Plus GetData](https://code.earthengine.google.com/691d2d6e525772f97f1d6e74d271fcaf)
+- Click on the "Scripts" Tab in the upper left panel.
+- Open "Reader" the the "Scripts" Tab
+- Open "TS_Plus_GetData.js"
+- In the upper center panel verify that line 6 points to  
+	 `users/jstnbraaten/modules:ee-lcb.js`
+- There are a variety of parameters that can be changed and there is a brief description of each on the same line as the parameters value. 
+- In the upper center panel edit line 16 to your file path string to your shapefile asset.
+-the code line label can be seen in the left position of the upper center panel.
+- Once happy with your parameter adjustments (if needed)
 
-`lcb.props['featureCollection'] = 'your/asset/location'`
+-Click "Run" in the upper right portion of the upper center panel
 
-and the feature ID looks like:
+- After a few moments the "Tasks" Tab will flash yellow
 
-`lcb.props['featureID'] = 'uniqID'`
+- Click the "Tasks" Tab.
 
-You can also change other features like the start year.
+- In the "Tasks" there will be 7 tasks: 4 images (rgb654 rgb543 rgbTC rbg432) and 3 files (observationsInfo, Observations-KML, Observations_GeoJSON)
 
-Next click "Run" at the top of the console.
+*** describe each file ***.............................................................................More
 
+- Click on each of the "RUN" Tabs.
 
-After a few moments the console tab should turn yellow and object will be appear under the tasks tab.
+- A Tasks dialog box will appear
 
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/gee3.JPG' width = 300>
+- Double check Drive folder (the folder where it will be saved on your Google Drive)
 
-These tasks represent the images and geometries/data files that will be used in Time Sync Plus. You will see that there are four different 'rgb' images and three 'observation' files.   Click the 'Run' button for which ever images you like, but you'll need to run the tasks for all the observation files. After Clicking the 'Run' button you will be prompted with a dialog 
-box that looks like this:
+- Click the "Run" Tab.
 
-<img src ='https://github.com/eMapR/TimeSync-Plus/blob/master/images/gee4.JPG' width = 300>
+- A rotating gear will appear next to the task.
 
-Here, you can define where the files and images get saved. Please, keep the default file names.
-
+- repeat for each task, keeping the Drive folder the same for each task.
 
 
 
@@ -122,13 +133,9 @@ Once your done with the above process you'll need to make a new folder called 'T
 
 ## Step 6: Edit App options text file
 
+the config.txt file in the database folder is used to define names for attribution.  
 
-
-This text file was a YAML file, but due to the limitation of environment  parameters a more basic form was needed. Unfortunately, this means that editing this file may be more daunting for some. 
-
-In order for the user to have some flexibility in attribution, a text file is needed so that the user can define features to attribute. The config.txt file is used just for that purpose. In this config.txt file the user can edit names of fields and values which are representative of how the event table is structured and how attribution properties function in the application.
-
-The config.txt file is a python dictionary, and in this dictionary there are three main pieces a 'polygonTable', 'displayTable', and 'eventTable'. Of these there are two objects the user can add to, and they are the "displayTable" and the "eventTable". The "polygonTable" should not be changed! However, there two labels,YOD and Comment , in the displaytable and the eventTable that should not be changed.To make changes to the config.txt file follow the example below.
+The config.txt file is a python dictionary, and in this dictionary there are three main pieces a 'polygonTable', 'displayTable', and 'eventTable'. Only "displayTable" and the "eventTable" should be edited by the user. To make changes to the config.txt file follow the example below.
 
 This is what the config.txt file looks like:
 
@@ -138,16 +145,21 @@ This is what the config.txt file looks like:
 {
 'polygonTable': ['plotid', 'geo', 'json'], 
 'displayTable': {
-	'Comment': [''], 
-	'ChangeAgent': ['none', 'unknown', 'regrowth', 'fire', 'logging','flooding', 'pine bug', 'false reading'], 
-	'YOD': [''], 
-	'User': ['Peter', 'Katie'],
-	'Confidance': ['low', 'med', 'high']}, 
-'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'Confidance', 'User', 'Comment']
+    'Comment': [''],
+    'ChangeType': ['Annual Variability', 'Agricultural', 'Agricultural Clearing', 'Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown'], 
+    'Event_Year': [''],
+    'Event_Name': [''],
+    'Valid_name': ['APlatel','CBarsch','CCopass','GStonecipher','NAntonova'],
+    'Confidence': ['3', '2', '1'], 
+    'Alt_type': ['Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown']},
+'eventTable': ['plotId', 'Valid_Date', 'LT_YOD', 'Event_Year', 'Event_Name', 'ChangeType', 'Confidence', 'Alt_type', 'Comment']
 }
 ```
 
 ------
+
+
+
 
 If we wanted to add a 'State' field to our table we would need to add " 'State', " to the 'eventTable' list. A list contain the values in the square brackets "[ ]". In the event table only add values after 'LT_YOD'. Once we add 'State' our event table line would look like this:
 
