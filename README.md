@@ -175,7 +175,7 @@ This is what the config.txt file looks like:
     'ChangeType': ['Annual Variability', 'Agricultural', 'Agricultural Clearing', 'Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown'], 
     'Event_Year': [''],
     'Event_Name': [''],
-    'Valid_name': ['APlatel','CBarsch','CCopass','GStonecipher','NAntonova'],
+    'Valid_name': ['Smith','Happ','Row','Johnson','Bolstad'],
     'Confidence': ['3', '2', '1'], 
     'Alt_type': ['Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown']},
 'eventTable': ['plotId', 'Valid_Date', 'LT_YOD', 'Event_Year', 'Event_Name', 'ChangeType', 'Confidence', 'Alt_type', 'Comment']
