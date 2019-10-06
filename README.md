@@ -187,7 +187,23 @@ This is what the config.txt file looks like:
 
 
 ## Step 9: Create Database(s) from geojson(s)
-Now, we will make SQL Databases from our geojoson files. This is done by running the geojsonToSqlDB.py script. The script will ask for the location of two files. The config text file and a geojson directory (just click on the a geojson file in the directory). This will create an equal number of databases to the number of geojson files. The databases will be placed in directory with the tiles folder.
+- Open a terminal or command prompt.
+- Navigate to script folder in the project directory with your terminal.
+- In the terminal enter as follows and pertains to your operating system:
+```
+python geojsonToSqlDB.py
+```
+  - A dialog box will appear asking for the location of the config.txt file.
+- Click OK
+- A file path dialog box will appear.
+- Find the location of your "config.txt" file.
+- Double click the file.
+- A dialog box will appear asking for the location of the geojsons file(s).
+- Click OK.
+- A file path dialog box will appear.
+- Find the location of a geojson file.
+- Double click the file.
+- The databases will be written to the same directory as the config.txt file.
 
 ## Step 10: Start the App
 
