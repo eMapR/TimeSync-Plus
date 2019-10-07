@@ -183,8 +183,8 @@ This is what the config.txt file looks like:
 }
 ```
 
-The keys in the "displayTable" are names that will correspond to a field name in a CSV file and the values will be the selectable values for that field. When 'displayTable' keys match 'eventTable' values they will be display in the application as  attribution buttons.  There are some special key value pairs that allow a text box to be available as an attribution style.  Those pairs are "'Comment': [''],  Event_Year': [''], and 'Event_Name': ['']" . These key pairs can be removed from the config.txt file if a text box is not need.
 
+There are keys and values in the config file. Keys and the elements in front of ":" and values are the elements in brackets. For example, "Valid_name" is a key and 'Smith' is one of the value assocatied with that key. A key value that is defined in both the "displayTable" and "eventTable" will be display in the application as a button with its values as choices for attribution.  
 
 ## Step 9: Create Database(s) from geojson(s) (Python 2.7 required)
 - Open a terminal or command prompt.
