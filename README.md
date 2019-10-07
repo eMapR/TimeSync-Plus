@@ -162,7 +162,7 @@ What is the ending year? :2018
 
 The config.txt file in the database folder is used to define names for attribution.  
 
-The config.txt file is a python dictionary, and in this dictionary there are three main pieces a 'polygonTable', 'displayTable', and 'eventTable'. Only "displayTable" and the "eventTable" should be edited by the user. To make changes to the config.txt file follow the example below.
+The config.txt file is a python dictionary, and in this dictionary there are three main pieces a 'polygonTable', 'displayTable', and 'eventTable'. Only "displayTable" and the "eventTable" should be edited by the user.
 
 This is what the config.txt file looks like:
 
@@ -184,7 +184,7 @@ This is what the config.txt file looks like:
 ```
 
 
-There are keys and values in the config file. Keys and the elements in front of ":" and values are the elements in brackets. For example, "Valid_name" is a key and 'Smith' is one of the value assocatied with that key. A key value that is defined in both the "displayTable" and "eventTable" will be display in the application as a button with its values as choices for attribution.  
+There are keys and values in the config file. Keys and the elements in front of ":" and values are the elements in brackets. For example, "Valid_name" is a key and 'Smith' is one of the value assocatied with that key. A key value that is defined in both the "displayTable" and "eventTable" will be display in the application as a button with its values as choices for attribution. Some for the values in the the displayTable are only brackets and quotation marks. This are unique key value pairs and will only work in there current form in the above example. They allow a commment box to be used insted of having to define values as strings.   
 
 ## Step 9: Create Database(s) from geojson(s) (Python 2.7 required)
 - Open a terminal or command prompt.
