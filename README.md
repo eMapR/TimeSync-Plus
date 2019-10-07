@@ -48,7 +48,7 @@ Make a point or polygon shapefile of disturbance areas. You will need to add a u
 ## Step 3: How to Run Google Earth Engine Script to generate data
 
 - Go to [GEE](https://code.earthengine.google.com/).
-- If don't have repository access go to the links below.
+- If don't have repository access go to the links below. They should add file paths in your GEE "Reader" directory under "scripts".
     - [Support Module](https://code.earthengine.google.com/?accept_repo=users/jstnbraaten/modules)
     - [TS Plus GetData](https://code.earthengine.google.com/691d2d6e525772f97f1d6e74d271fcaf)
 - Click on the "Scripts" Tab in the upper left panel.
