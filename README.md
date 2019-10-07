@@ -21,7 +21,7 @@ Make a point or polygon shapefile of disturbance areas. You will need to add a u
 
 ## Step 2: How to Upload the shapefile to Google Earth Engine
 - Do you have a GEE (Google Earth Engine) account?
-  - [Make a GEE account](https://code.earthengine.google.com/ "tile" target="_blank")
+  - [Make a GEE account](https://code.earthengine.google.com/)
 - How to upload a zipped shapefile to GEE.
   - From the main GEE page click "Assets" in the upper left panel.
   - Click the "NEW" button under the "Assets" Tab. 
