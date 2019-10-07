@@ -63,8 +63,8 @@ Make a point or polygon shapefile of disturbance areas. You will need to add a u
 - Click the "Tasks" Tab.
 - In the "Tasks" there will be 7 tasks: 4 images (rgb654 rgb543 rgbTC rbg432) and 3 files (observationsInfo, Observations-KML, Observations_GeoJSON).
 - Click on each of the "RUN" Tabs.
-- A Tasks dialog box will appear
-- Double check Drive folder (the folder where it will be saved on your Google Drive)
+- A Tasks dialog box will appear.
+- Double check the drive folder value (The folder where it will be saved on your Google Drive).
 - Click the "Run" Tab.
 - A rotating gear will appear next to the task.
 - repeat for each task, keeping the Drive folder the same for each task.
@@ -75,8 +75,8 @@ Make a point or polygon shapefile of disturbance areas. You will need to add a u
 - Click the green button "Clone or Download".
 - A dropdown box will appear.
 - Click download "ZIP".
-- Find and unzipped download file.
--Find the project directory in the unzipped TimeSync-Plus folder.
+- Find and unzip downloaded file.
+- Find the project directory in the unzipped TimeSync-Plus folder.
 ***Note: This directory is where all your pre-project processing will take place ***
 File Structure:
 ```
@@ -102,7 +102,7 @@ project
                    |      observations.geojson
                    |      observations.kml
                    | 
-                   |-------|tms
+                   |-------|tms *** This file and ones below will appear in step 6 ***
                            |
                            |rgb543  ***years>>>zoomlevels>>>location>>>images.png***
                            |rgb654  ***years>>>zoomlevels>>>location>>>images.png***
@@ -112,14 +112,15 @@ project
 
 ## Step 5: Download data from Google Drive
 - Go to your Google Drive .
-- Find the location of your Drive folder from step 3.
+- Find the location of your drive folder from step 3.
 - Right click folder.
 - Select Download from the dropdown box.
 - A download process box will appear in the lower right.
 - Once downloading is complete. Unzip the file and name the folder "TimeSync".
+- Be sure that all file were downloaded by matching files with the ones in your Google Drive.
 - Place the "TimeSync" folder in the "tiles" folder of the "project" directory so it looks like the structure above.
 
-## Step 6: Make annual image tile sets
+## Step 6: Make annual image tile sets (Python version 2.7 required)
 - Open a terminal or command prompt.
 - Navigate to script folder in the project directory with your terminal.
 - In the terminal enter as follows and pertains to your operating system:
@@ -133,7 +134,7 @@ NOTE: The 13 represent the highest zoomlevel of tiles that will be created. A va
 
 
 
-## Step 7: (Optional but suggested for large areas) Split Geojson by year or number of features PYTHON 2.7:
+## Step 7: (Optional but suggested for large areas) Split Geojson by year or number of features (Python 2.7 required):
 
 - Split By Feature:
   - Open a terminal or command prompt.
@@ -185,7 +186,7 @@ This is what the config.txt file looks like:
 The keys in the "displayTable" are names that will correspond to a field name in a CSV file and the values will be the selectable values for that field. When 'displayTable' keys match 'eventTable' values they will be display in the application as  attribution buttons.  There are some special key value pairs that allow a text box to be available as an attribution style.  Those pairs are "'Comment': [''],  Event_Year': [''], and 'Event_Name': ['']" . These key pairs can be removed from the config.txt file if a text box is not need.
 
 
-## Step 9: Create Database(s) from geojson(s) PYTHON 2.7
+## Step 9: Create Database(s) from geojson(s) (Python 2.7 required)
 - Open a terminal or command prompt.
 - Navigate to script folder in the project directory with your terminal.
 - In the terminal enter as follows:
