@@ -1,5 +1,5 @@
 
-# TimeSync-Plus
+# TimeSync-Plus  !!! under condstruction !!!
 TimeSync+ is an application for gathering point and polygon spectral temporal information from Landsat time series data into a database.
 
 ## About 
@@ -235,15 +235,6 @@ At the bottom of the application's display is a set of yearly spectral image map
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/05imagechips.JPG' width="300">
 
-The user can apply attributes to the plot ID by right clicking an observation in the spectral trajectory plot. This action will open a pop up box with several button that where defined by the user in the text file. When clicked these button open and show a selection of values that need to be applied in order to save them to the event table in the SQL database. 
-
-<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/06savedata2.JPG' width="250">
-
-If the comment/submit pair where applied in the text file the pop up box will have a comment button, and when clicked a comment box will expand in the pop up box. The user can add as much text as needed; however, when the user is done commenting the user must click the submit button below the comment box. And once all associated values have been chosen the user will need to click the save button in order to record his or her attributes. 
-
-All of the pop up button options need to have values selected in order for them to be save them!
-
-<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/06savedata3.JPG' width="250">
 
 To export the event table with saved attributes the user need to click on the Download CSV button in the header of the application. When clicked the user will be prompted with a dialog box asking where to save the CSV file. Once the user define a place the save the file a CSV file will appear there.
 
