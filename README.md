@@ -186,7 +186,36 @@ This is what the config.txt file looks like:
 
 There are keys and values in the config file. Keys and the elements in front of ":" and values are the elements in brackets. For example, "Valid_name" is a key and 'Smith' is one of the value assocatied with that key. The "displaytable" holds the user's specific attribution names and values. A name or key value that is defined in both the "displayTable" and "eventTable" will be display in the application as a button with its values as choices for attribution. Some for the values in the the displayTable are only brackets and quotation marks. Thess are unique key value pairs and will only work in there current form in the above example. They allow a commment box to be used insted of having to define values as strings. 
 
-If you careful you'll notice that there are some keys in the eventTable that are not in the displayTable. These keys are "plotID","Vaild_Date",and "LT_YOD". They are import to exportable CSV file avaiable in the application.
+You'll notice that there are some keys in the eventTable that are not in the displayTable. These keys are "plotID","Vaild_Date",and "LT_YOD". They are important to the exportable CSV file avaiable in the application as they are field names for the plot ID, a time stamp for when data is saved and landTrendr impiled year of change. These value should not be changed. 
+
+EXAMPLE 
+
+If you wanted to add a new button and values you would do as follows:
+
+- Make a key value pair
+`'State': ['no change', 'postive change', 'negative change']`
+- Add the the key value pair anywhere in the displayTable dictionary (in the "'displayTable':{add here}")
+- If add anywhere but the end of the displayTable dictionary be sure to add a "," at the end.
+- the key value "State" to the end list of values of the eventTable.
+
+The new config file would then look like this:
+
+```diff
+{
+'polygonTable': ['plotid', 'geo', 'json'], 
+'displayTable': {
+    'Comment': [''],
+    'ChangeType': ['Annual Variability', 'Agricultural', 'Agricultural Clearing', 'Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown'], 
+    'Event_Year': [''],
++   'State': ['no change', 'postive change', 'negative change'], <<<<< NEW
+    'Event_Name': [''],
+    'Valid_name': ['Smith','Happ','Row','Johnson','Bolstad'],
+    'Confidence': ['3', '2', '1'], 
+    'Alt_type': ['Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown']},+
++ 'eventTable': ['plotId', 'Valid_Date', 'LT_YOD', 'Event_Year', 'Event_Name', 'ChangeType', 'Confidence', 'Alt_type', 'Comment', 'State']           <<<<  NEW
+}
+```
+
 
 ## Step 9: Create Database(s) from geojson(s) (Python 2.7 required)
 - Open a terminal or command prompt.
