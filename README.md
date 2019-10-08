@@ -186,7 +186,7 @@ This is what the config.txt file looks like:
 
 There are keys and values in the config file. Keys and the elements in front of ":" and values are the elements in brackets. For example, "Valid_name" is a key and 'Smith' is one of the value assocatied with that key. The "displaytable" holds the user's specific attribution names and values. A name or key value that is defined in both the "displayTable" and "eventTable" will be display in the application as a button with its values as choices for attribution. Some for the values in the the displayTable are only brackets and quotation marks. Thess are unique key value pairs and will only work in there current form in the above example. They allow a commment box to be used insted of having to define values as strings. 
 
-** All values must be must be in matching quotation marks **
+**All values must be must be in matching quotation marks.**
 
 You'll notice that there are some keys in the eventTable that are not in the displayTable. These keys are "plotID","Vaild_Date",and "LT_YOD". They are important to the exportable CSV file avaiable in the application as they are field names for the plot ID, a time stamp for when data is saved and landTrendr impiled year of change. These value should not be changed. 
 
