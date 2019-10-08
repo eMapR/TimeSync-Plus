@@ -238,9 +238,16 @@ python geojsonToSqlDB.py
 - Double click the file.
 - The databases will be written to the same directory as the config.txt file.
 
+
+
 ## Step 10: Start the App
 
-The application location is in your zipped TSP+4 file. Decompresses or unzipped the zipped file, then open the unpackaged folder. Continue opening folder until you come to a folder with a variety files. Here, there will be a TSP+4.2.exe file. Double click that file.   
+The application is avaible here.
+
+- Decompresses or unzipped the zipped file.
+- Open the unpackaged folder. 
+- Locate the TSPlus_v4.* file. 
+- Double click that file.   
 
 Once opened, a dialog box will appear and the user will need to locate the SQL database they created. When the SQL file is found double click it, and the dialog box will disappear. After a few moments the plot list will be populated with polygon or point identification values.
 
