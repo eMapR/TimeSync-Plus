@@ -1,11 +1,13 @@
 {
 'polygonTable': ['plotid', 'geo', 'json'], 
 'displayTable': {
-    'Comment': ['submit'], 
-    'ChangeAgent': ['none', 'unknown', 'regrowth', 'fire', 'logging', 'flooding', 'pine bug', 'false reading'], 
-    'YOD': ['year', 'false reading'], 
-    'User': ['Peter', 'Katie'], 
-    'Confidance': ['low', 'med', 'high']}, 
-'eventTable': ['plotId', 'obserId', 'LT_YOD', 'YOD', 'ChangeAgent', 'Confidance', 'User', 'Comment']
+    'Comment': [''],
+    'ChangeType': ['Annual Variability', 'Agricultural', 'Agricultural Clearing', 'Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown'], 
+    'Event_Year': [''],
+    'Event_Name': [''],
+    'Valid_name': ['APlatel','CBarsch','CCopass','GStonecipher','NAntonova'],
+    'Confidence': ['3', '2', '1'], 
+    'Alt_type': ['Annual Variability', 'Agricultural', 'Agricultural Clearing', 'Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown']},
+'eventTable': ['plotId', 'Valid_Date', 'LT_YOD', 'Event_Year', 'Event_Name', 'ChangeType', 'Confidence', 'Alt_type', 'Valid_name', 'Comment']
 }
 
