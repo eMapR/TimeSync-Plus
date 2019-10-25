@@ -240,6 +240,7 @@ python geojsonToSqlDB.py
 
 
 
+
 ## Step 10: Start the App
 
 The application is avaible here.
@@ -247,9 +248,10 @@ The application is avaible here.
 - Decompresses or unzipped the zipped file.
 - Open the unpackaged folder. 
 - Locate the TSPlus_v4.* file. 
-- Double click that file.   
+- Double click that file.
+- Move a Database into the same directory as the tiles folder.
 
-Once opened, a dialog box will appear and the user will need to locate the SQL database they created. When the SQL file is found double click it, and the dialog box will disappear. After a few moments the plot list will be populated with polygon or point identification values.
+Once opened, a dialog box will appear and the user will need to locate the database you moved to be with the tiles folder. When the DB file is found double click it, and the dialog box will disappear. After a few moments the plot list will be populated with polygon or point identification values.
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/01_DB_box.JPG' width="400">
 
