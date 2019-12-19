@@ -101,7 +101,11 @@ project
                    |      observationsInfo.geojson
                    |      observations.geojson
                    |      observations.kml
-                   | 
+		   |      rgb543.tif
+		   |	  rgb654.tif
+		   |	  rbg432.tif
+                   |	  rbgTC.tif 
+		   |
                    |-------|tms *** This file and ones below will appear in step 6 ***
                            |
                            |rgb543  ***years>>>zoomlevels>>>location>>>images.png***
