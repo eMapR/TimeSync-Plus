@@ -106,7 +106,7 @@ project
 		   |	  rbg432.tif
                    |	  rbgTC.tif 
 		   |
-                   |-------|tms *** This file and ones below will appear in step 6 ***
+                   |-------|tms *** This folder and the ones below will appear in step 6 ***
                            |
                            |rgb543  ***years>>>zoomlevels>>>location>>>images.png***
                            |rgb654  ***years>>>zoomlevels>>>location>>>images.png***
