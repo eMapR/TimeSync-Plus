@@ -5,7 +5,7 @@
     'ChangeType': ['Annual Variability', 'Agricultural', 'Agricultural Clearing', 'Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown'], 
     'Event_Year': [''],
     'Event_Name': [''],
-    'Valid_name': ['APlatel','CBarsch','CCopass','GStonecipher','NAntonova'],
+    'Valid_name': ['Smith','Tim','Sam','Susan','John'],
     'Confidence': ['3', '2', '1'], 
     'Alt_type': ['Annual Variability', 'Agricultural', 'Agricultural Clearing', 'Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown']},
 'eventTable': ['plotId', 'Valid_Date', 'LT_YOD', 'Event_Year', 'Event_Name', 'ChangeType', 'Confidence', 'Alt_type', 'Valid_name', 'Comment']
