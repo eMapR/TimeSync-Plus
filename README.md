@@ -197,11 +197,11 @@ The key "displaytable" holds the user's specific attribution categories and valu
 
 **All values must be in matching quotation marks.**
 
-You'll notice that there are some keys in the eventTable that are not in the displayTable. These keys are "plotID","Vaild_Date",and "LT_YOD". They are important to the exportable CSV file avaiable in the application as they are field names for the plot ID, a time stamp for when data is saved and landTrendr impiled year of change. These value should not be changed. 
+You'll notice that there are some keys in the eventTable that are not in the displayTable of the config text file. These keys are "plotID", "Vaild_Date",and "LT_YOD". They are important to the exportable CSV file avaiable in the application. they are field names for the plot ID, a time stamp for when data is saved and landTrendr impiled year of change. These value should not be changed. 
 
-EXAMPLE 
+Config Text Editing Example 
 
-If you wanted to add a new button and values you would do as follows:
+If you wanted to add a new category and values you would do as follows:
 
 - Make a key value pair
 `'State': ['no change', 'postive change', 'negative change']`
