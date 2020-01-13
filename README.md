@@ -227,6 +227,7 @@ The new config file would then look like this:
 
 
 ## Step 9: Create Database(s) from geojson(s) (Python 2.7 required)
+- NOTE: The Databases created in this step will be written in the same location of the config text file.
 - Open a terminal or command prompt.
 - Navigate to script folder in the project directory with your terminal.
 - In the terminal enter as follows:
