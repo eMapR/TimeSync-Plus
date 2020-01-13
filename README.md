@@ -193,7 +193,7 @@ This is what the config text file looks like:
 
 There are keys and values in the config file. Keys are the elements in front of the colon ":" and values are the elements in brackets. For example, "Valid_name" is a key and 'Smith' is one of the value assocatied with that key. 
 
-The key "displaytable" holds the user's specific attribution categories and values. A key value that is defined in both the "displayTable" and "eventTable" will be display in the application as a button with its values as choices for attribution. Some of the values in the "displayTable" above are only brackets and quotation marks. Thess are unique key value pairs and will only work in there current form as in the above example, meaning if you want a text box you have three key/value options avaiable to you: "'Event_Year': ['']" , "'Event_Name': ['']" or "'commment': ['']" .  These allow a commment box to be used insted of having hard coded values. 
+The key "displaytable" holds the user's specific attribution categories and values. A key value that is defined in both the "displayTable" and "eventTable" will be display in the application as a button with its values as choices for attribution. Some of the values in the "displayTable" above are only brackets and quotation marks. Thess are unique key value pairs and will only work in there current form as in the above example, meaning if you want a text box you have three key/value options avaiable to you: "'Event_Year': ['']" , "'Event_Name': ['']" or "'commment': ['']" .  These allow a commment box to be used insted of having hard coded values. This is helpful when a wide range of choices are needed for attribution.
 
 **All values must be in matching quotation marks.**
 
