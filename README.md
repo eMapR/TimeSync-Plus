@@ -268,7 +268,7 @@ Once opened, a dialog box will appear and the user will need to locate the datab
 
 After a few moments the Plots list will be populated with polygon or point identification values. Clicking on one of the plot list identification values will show the plot's spectral and temporal data.
 
-<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist.JPG' width="200"> 
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist.JPG' width="600"> 
 
  This may take a few moments.If no images appear in the bottom section make sure your selected database is in the same directory as your tiles folder. 
 
