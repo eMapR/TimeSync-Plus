@@ -230,7 +230,7 @@ The new config file would then look like this:
 
 ## Step 9: Create Database(s) from geojson(s) (Python 2.7 required)
 - NOTE: The Databases created in this step will be written in the same location of the config text file.
-- Open a terminal or command prompt.
+- Open a terminal or command prompt that supports python version 2.7.1 .
 - Navigate to script folder in the project directory with your terminal.
 - In the terminal enter as follows:
 ```
@@ -246,28 +246,33 @@ python geojsonToSqlDB.py
 - A file path dialog box will appear.
 - Find the location of a geojson file.
 - Double click the file.
-- The databases will be written to the same directory as the config.txt file.
+- The databases will be written to the same directory location as the config.txt file used.
 
 
 
 
 ## Step 10: Start the App
 
-The application is avaible here.
+- Make sure that the Database you want to attributed is in the same directory as the tiles folder.
+
+The application is avaible [here](ftp://islay.ceoas.oregonstate.edu/TimeSyncPlus/).
 
 - Decompresses or unzipped the zipped file.
 - Open the unpackaged folder. 
-- Locate the TSPlus file. 
+- Locate the "TSPlus_v4.3" file.
 - Double click that file.
-- Move a Database into the same directory as the tiles folder.
 
-Once opened, a dialog box will appear and the user will need to locate the database you moved to be with the tiles folder. When the DB file is found double click it, and the dialog box will disappear. After a few moments the plot list will be populated with polygon or point identification values.
+Once opened, a dialog box will appear and the user will need to locate the database you moved to be with the tiles folder. When the DB file is found double click it, and the dialog box will disappear. 
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/01_DB_box.JPG' width="400">
 
-Clicking on one of the plot list identification values, will render the spectral and spatial data. This may take a few moments. Once loaded, the user will see that plot list ID value is highlighted, and spectral plot in the upper center is populated, and that there are several images chips with the same polygon geometry in the upper right and bottom sections. If no images appear in the bottom section make sure your selected database is in the same directory as your tiles folder. 
+After a few moments the Plots list will be populated with polygon or point identification values. Clicking on one of the plot list identification values will show the plot's spectral and temporal data.
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist.JPG' width="200"> 
+
+ This may take a few moments.If no images appear in the bottom section make sure your selected database is in the same directory as your tiles folder. 
+
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/full.JPG' width="200">
 
 The spectral plot shows the summary spectral values for the area represent by the point or polygon displayed. For visual purposes, the user can double click on two observation points to connect a line between them.
 
