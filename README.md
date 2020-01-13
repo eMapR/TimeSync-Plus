@@ -169,11 +169,9 @@ What is the ending year? :2018
 
 ## Step 8: Edit App attribution text file
 
-The config.txt file in the database folder is used to define names for attribution.  
+The config.txt file in the project folder is used to define categories and values for attribution in the application.  
 
-The config.txt file is a python dictionary, and in this dictionary there are three main pieces a 'polygonTable', 'displayTable', and 'eventTable'. Only the "displayTable" and the "eventTable" should be edited by the user.
-
-This is what the config.txt file looks like:
+This is what the config text file looks like:
 
 ------
 
@@ -182,7 +180,7 @@ This is what the config.txt file looks like:
 'polygonTable': ['plotid', 'geo', 'json'], 
 'displayTable': {
     'Comment': [''],
-    'ChangeType': ['Annual Variability', 'Agricultural', 'Agricultural Clearing', 'Development', 'Fire', 'Mass Movement', 'Progressive Defoliation','Riparian', 'Tree Toppling', 'Unknown'], 
+    'ChangeType': ['Annual Variability', 'Agricultural', 'Agricultural Clearing', 'Development', 'Fire', 'Mass Movement', 'Progressive   Defoliation','Riparian', 'Tree Toppling', 'Unknown'], 
     'Event_Year': [''],
     'Event_Name': [''],
     'Valid_name': ['Smith','Happ','Row','Johnson','Bolstad'],
@@ -193,8 +191,9 @@ This is what the config.txt file looks like:
 ```
 
 
-There are keys and values in the config file. Keys are the elements in front of the colon ":" and values are the elements in brackets. For example, "Valid_name" is a key and 'Smith' is one of the value assocatied with that key. The "displaytable" holds the user's specific attribution names and values. A key value that is defined in both the "displayTable" and "eventTable" will be display in the application as a button with its values as choices for attribution. Some for the values in the displayTable above are only brackets and quotation marks. Thess are unique key value pairs and will only work in there current form in the above example, meaning if you want a text box you have three key/value options avaiable to you:" 'Event_Year': [''],
-    'Event_Name': [''] and 'Comment': [''], " .  These allow a commment box to be used insted of having to define values as strings. 
+There are keys and values in the config file. Keys are the elements in front of the colon ":" and values are the elements in brackets. For example, "Valid_name" is a key and 'Smith' is one of the value assocatied with that key. 
+
+The key "displaytable" holds the user's specific attribution categories and values. A key value that is defined in both the "displayTable" and "eventTable" will be display in the application as a button with its values as choices for attribution. Some of the values in the "displayTable" above are only brackets and quotation marks. Thess are unique key value pairs and will only work in there current form as in the above example, meaning if you want a text box you have three key/value options avaiable to you: "'Event_Year': ['']" , "'Event_Name': ['']" or "'commment': ['']" .  These allow a commment box to be used insted of having hard coded values. 
 
 **All values must be in matching quotation marks.**
 
