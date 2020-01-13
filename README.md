@@ -272,7 +272,7 @@ After a few moments the Plots list will be populated with polygon or point ident
 
  This may take a few moments.If no images appear in the bottom section make sure your selected database is in the same directory as your tiles folder. 
 
-<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/full.JPG' width="600">
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/full.JPG' width="800">
 
 The spectral plot shows the summary spectral values for the area represent by the point or polygon displayed. For visual purposes, the user can double click on two observation points to connect a line between them.
 
