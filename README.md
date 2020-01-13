@@ -124,8 +124,8 @@ project
 - Be sure that all file were downloaded by matching files with the ones in your Google Drive.
 - Place the "TimeSync" folder in the "tiles" folder of the "project" directory so it looks like the structure above.
 
-## Step 6: Make annual image tile sets (Python version 2.7 required)
-- Open a terminal or command prompt.
+## Step 6: Make annual image tile sets
+- Open a terminal or command prompt. I suggest using an anaconda command prompt with gdal installed. (not powershell)
 - Navigate to script folder in the project directory with your terminal.
 - In the terminal enter as follows and pertains to your operating system:
 ```
@@ -162,11 +162,13 @@ Out directory is real.
 What is the starting year? :1986
 What is the ending year? :2018
 ```
-## Step 8: Edit App options text file
+
+
+## Step 8: Edit App attribution text file
 
 The config.txt file in the database folder is used to define names for attribution.  
 
-The config.txt file is a python dictionary, and in this dictionary there are three main pieces a 'polygonTable', 'displayTable', and 'eventTable'. Only "displayTable" and the "eventTable" should be edited by the user.
+The config.txt file is a python dictionary, and in this dictionary there are three main pieces a 'polygonTable', 'displayTable', and 'eventTable'. Only the "displayTable" and the "eventTable" should be edited by the user.
 
 This is what the config.txt file looks like:
 
@@ -188,7 +190,8 @@ This is what the config.txt file looks like:
 ```
 
 
-There are keys and values in the config file. Keys are the elements in front of ":" and values are the elements in brackets. For example, "Valid_name" is a key and 'Smith' is one of the value assocatied with that key. The "displaytable" holds the user's specific attribution names and values. A name or key value that is defined in both the "displayTable" and "eventTable" will be display in the application as a button with its values as choices for attribution. Some for the values in the the displayTable are only brackets and quotation marks. Thess are unique key value pairs and will only work in there current form in the above example. They allow a commment box to be used insted of having to define values as strings. 
+There are keys and values in the config file. Keys are the elements in front of the colon ":" and values are the elements in brackets. For example, "Valid_name" is a key and 'Smith' is one of the value assocatied with that key. The "displaytable" holds the user's specific attribution names and values. A key value that is defined in both the "displayTable" and "eventTable" will be display in the application as a button with its values as choices for attribution. Some for the values in the displayTable above are only brackets and quotation marks. Thess are unique key value pairs and will only work in there current form in the above example, meaning if you want a text box you have three key/value options avaiable to you:" 'Event_Year': [''],
+    'Event_Name': [''] and 'Comment': [''], " .  These allow a commment box to be used insted of having to define values as strings. 
 
 **All values must be in matching quotation marks.**
 
