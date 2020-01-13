@@ -292,6 +292,8 @@ At the bottom of the application's display is a set of yearly spectral image map
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/05imagechips.JPG' width="300">
 
+The attribution drop down buttons are located under the Spectral Trajectory plot, and when the cursor hovers over the button a drop down box will appear with either a comment box or a list of option...   
+
 
 To export the event table with saved attributes the user need to click on the Download CSV button in the header of the application. When clicked the user will be prompted with a dialog box asking where to save the CSV file. Once the user define a place the save the file a CSV file will appear there.
 
