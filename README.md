@@ -82,9 +82,6 @@ File Structure:
 ```
 project
 |              
-|---------|databases 
-|              config.txt
-|              
 |---------|scripts
 |              gdal2tiles.py
 |              geojsonToSqlDB.py
@@ -107,11 +104,17 @@ project
                    |	  rbgTC.tif 
 		   |
                    |-------|tms *** This folder and the ones below will appear in step 6 ***
-                           |
-                           |rgb543  ***years>>>zoomlevels>>>location>>>images.png***
-                           |rgb654  ***years>>>zoomlevels>>>location>>>images.png***
-                           |rgbTC   ***years>>>zoomlevels>>>location>>>image.png***
-                           |rgb432  ***years>>>zoomlevels>>>location>>>image.png***
+                   |       |
+                   |       |rgb543  ***years>>>zoomlevels>>>location>>>images.png***
+                   |       |rgb654  ***years>>>zoomlevels>>>location>>>images.png***
+                   |       |rgbTC   ***years>>>zoomlevels>>>location>>>image.png***
+                   |       |rgb432  ***years>>>zoomlevels>>>location>>>image.png***
+                   |
+                   |      config.txt
+		   |      *** Database files will appear in step 9 ***
+		   |      TSdatabase.db 
+		   
+
 ```
 
 ## Step 5: Download data from Google Drive
