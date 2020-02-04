@@ -148,7 +148,7 @@ NOTE: The 13 represent the highest zoomlevel of tiles that will be created. A va
   - Navigate to script folder in the project directory with your terminal.
   - In the terminal enter as follows and pertains to your operating system:
 ```
-"python splitJsonByFe.py ../tiles/TimeSync/observations.geojson ../geojsons/" 
+"python splitJsonByFe.py \full\file\path\tiles\TimeSync\observations.geojson \full\file\path\tiles\TimeSync\geojsons\" 
 NOTE For Below: 6 , will output 6 geojson files with about 893 features per split geojson file
 >>>There are 5362 features in your GEE geojson file. How many split geojson files, which will become databases, would you like? 6
 ```
@@ -158,14 +158,8 @@ NOTE For Below: 6 , will output 6 geojson files with about 893 features per spli
     - Navigate to script folder in the project directory with your terminal.
     - In the terminal enter as follows and pertains to your operating system:
 ```
-"python splitJsonByYear.py ../tiles/TimeSync/observations.geojson ../geojsons/"
-NOTE for below :: 1986 to 2018 will make a geojson file for that range of years. 1992 to 1992 would return one geojson file for 1992
-Reading geojson file.
-Out directory is real.
-What is the starting year? :1986
-What is the ending year? :2018
+"python splitJsonByYear.py \full\file\path\tiles\TimeSync\observations.geojson \full\folder\path\geojsons\"
 ```
-
 
 ## Step 8: Edit App attribution text file
 
