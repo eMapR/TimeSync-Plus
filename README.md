@@ -158,7 +158,7 @@ NOTE For Below: 6 , will output 6 geojson files with about 893 features per spli
     - Navigate to script folder in the project directory with your terminal.
     - In the terminal enter as follows and pertains to your operating system:
 ```
-python splitJsonByYear.py \full\file\path\tiles\TimeSync\observations.geojson \full\folder\path\geojsons\
+python splitJsonByYear_v2.py \full\file\path\tiles\TimeSync\observations.geojson \full\folder\path\geojsons\
 ```
 
 ## Step 8: Edit App attribution text file
@@ -228,7 +228,7 @@ The new config file would then look like this:
 - Navigate to script folder in the project directory with your terminal.
 - In the terminal enter as follows:
 ```
-python geojsonToSqlDB.py
+python geojsonToSqlDB_v2.py
 ```
   - A dialog box will appear asking for the location of the config.txt file.
 - Click OK
