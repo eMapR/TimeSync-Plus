@@ -14,38 +14,6 @@ import glob
 import sys
 
 #=============================================================================
-yam = ''
-jsonPath = ''
-inputs_paths = [yam,jsonPath]
-inpho = ["Please, find the location of the config.txt file. Click ok to continue to file path dialog box.", "Please, find the location of your geojson directory. Click ok to continue to file path dialog box."]
-
-manSwitch = 1
-
-if manSwitch == 1:
-    for f in range(len(inputs_paths)):
-       root = Tkinter.Tk()
-       root.withdraw()
-       tkMessageBox.showinfo("File Location", inpho[f])
-       inputs_paths[f] = tkFileDialog.askopenfilename()
-
-    yam = inputs_paths[0]
-    database = os.path.dirname(inputs_paths[0])
-    #print(database)
-    #database = database+ "/"
-    jsonPathDir = os.path.dirname(inputs_paths[1])
-    if platform == "linux" or platform == "linux2" or platform == "darwin":
-        geojsons = glob.glob(jsonPathDir+"/"+"**.geojson")   #linux
-    elif platform == "win32":
-        geojsons = glob.glob(jsonPathDir+"\\"+"**.geojson") #windows
-    #print(geojsons)
-
-else:
-#"""this the manual run option that does not use the Tkinter module."""
-    yam = "/home/alpha/Desktop/TSP/tsp_projects/watershed/config.txt"
-    jsonPath = "/home/alpha/Desktop/TSP/tsp_projects/watershed/geojsons2/"
-    geojsons = glob.glob(jsonPath+"**.geojson")
-    #jsonPath = "/vol/v1/proj/TimeSyncPlus/TimeSync/observations.geojson"
-    database = "/home/alpha/Desktop/TSP/tsp_projects/watershed/"
 
 
 #============================================================================
@@ -187,7 +155,7 @@ def observation_value_list(data,year):
     return templist2
 #print (observation_value_list(data, 2001)) # 1985 to 2017
 #==========================================================================================
-def observation_value_dict(startYear, end, data):
+def observation_value_dict(startYear, end, data, yam):
 
     """  here we rearange our input GEE json file. So, we start by looping a loop. the first
     loop (outter loop) iterates over our time series (1985 to 2017). the loop varible is used 
@@ -238,10 +206,45 @@ def observation_value_dict(startYear, end, data):
 
 def main():
 
-    
+    yam = ''
+    jsonPath = ''
+    inputs_paths = [yam,jsonPath]
+    inpho = ["Please, find the location of the config.txt file. Click ok to continue to file path dialog box.", "Please, find the location of your geojson directory. Click ok to continue to file path dialog box."]
 
+    manSwitch = 1
+
+    if manSwitch == 1:
+        for f in range(len(inputs_paths)):
+           root = Tkinter.Tk()
+           root.withdraw()
+           tkMessageBox.showinfo("File Location", inpho[f])
+           inputs_paths[f] = tkFileDialog.askopenfilename()
+
+        yam = inputs_paths[0]
+        database = os.path.dirname(inputs_paths[0])
+        #print(database)
+        #database = database+ "/"
+        jsonPathDir = os.path.dirname(inputs_paths[1])
+        if platform == "linux" or platform == "linux2" or platform == "darwin":
+            geojsons = glob.glob(jsonPathDir+"/"+"**.geojson")   #linux
+        elif platform == "win32":
+            geojsons = glob.glob(jsonPathDir+"\\"+"**.geojson") #windows
+        #print(geojsons)
+
+    else:
+    #"""this the manual run option that does not use the Tkinter module."""
+        yam = "/home/alpha/Desktop/TSP/tsp_projects/watershed/config.txt"
+        jsonPath = "/home/alpha/Desktop/TSP/tsp_projects/watershed/geojsons2/"
+        geojsons = glob.glob(jsonPath+"**.geojson")
+        #jsonPath = "/vol/v1/proj/TimeSyncPlus/TimeSync/observations.geojson"
+        database = "/home/alpha/Desktop/TSP/tsp_projects/watershed/"
+   
+
+   
     counter = 0
     for i in geojsons:
+        if 'Info' in i:
+            break
         data = openJson(i)
         # lists of table names, column names, and column names with datatypes 
         sql_list = sql_input_list(yam)
@@ -250,8 +253,17 @@ def main():
         fieldNames = sql_list[2]
         dropdownstrings = str(sql_list[3]).replace("'", "")
 
-        #startYear = 1986 # make this dynamic
-        startYear = int(sorted(data['features'][0]['properties'])[0][0:4])
+        #startYear = 1984 # make this dynamic
+        
+        yearKey = sorted(data['features'][0]['properties'])[0][-2:]
+        listOfYears = []
+        for band in data['features'][0]['properties']:
+            if yearKey in band:
+                listOfYears.append(band)
+        listOfYears.sort()
+        startYear = int(listOfYears[0][:4])
+        endYear= int(listOfYears[-1][:4])
+
         #print (type(data))
         end = len(data['features'])
 
@@ -259,11 +271,11 @@ def main():
 
         # create a database connection
         if platform == "linux" or platform == "linux2" or platform == "darwin":
-            conn = create_connection(database+"/TSPdatabase"+str(counter+startYear)+".db")
+            conn = create_connection(database+"/TSPdatabase"+str(counter)+".db")
         elif platform == "win32":
-            conn = create_connection(database+"\TSPdatabase"+str(counter+startYear)+".db")
+            conn = create_connection(database+"\TSPdatabase"+str(counter)+".db")
         counter += 1
-        obser_val_dict = observation_value_dict(startYear, end, data) 
+        obser_val_dict = observation_value_dict(startYear, end, data, yam) 
         polygonData = obser_val_dict[0]
         #obserData = obser_val_dict[1]
         templistB = obser_val_dict[2]
