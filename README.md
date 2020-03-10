@@ -305,4 +305,4 @@ The one on the left contains five tabs, Index/Bands, Chip Set, show line, Global
 
 ​	Local Stretch: Reduces the y-axis to the max and min values. 
 
-The tab bar on the right should look familiar to you as these are your keys and values, and if you hover over a tab the values for the key will appear. 
+The tab bar on the right should look familiar to you as these are your keys and values, and if you hover over a tab the values for the key will appear. Click a value and its name will populate the tab. If you used comment boxes and would like to add text to them, click the expand box and begin to type, once completed a "text submitted" value will populate the tab. Once you are finished attributing a plot be sure to click the save button to the right of the attribution bar. If saved correctly a check mark will appear next to the plot name. 
