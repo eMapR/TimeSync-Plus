@@ -268,7 +268,7 @@ After a few moments the plots list will be populated with polygon or point ident
 
 Your display should look similar to the image below.  
 
-<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/full.JPG' width="800">
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/full1.JPG' width="800">
 
 The spectral plot shows the summary spectral values for the area represent by the point or polygon displayed. For visual purposes, the user can double click on two observation points to connect a line between them.
 
