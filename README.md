@@ -282,12 +282,6 @@ The user can change the base map by clicking the map icon in this image chip. Th
 
 At the bottom of the application's display is a set of yearly spectral image maps with a geometry on top of them. This set of temporal images help the user get a feel for what the spectral plot is displaying and allows for a more informed attribution.
 
-The attribution drop down buttons are located under the Spectral Trajectory plot, and when the cursor hovers over the button a drop down box will appear with either a comment box or a list of option...   
-
-To export the event table with saved attributes the user need to click on the Download CSV button in the header of the application. When clicked the user will be prompted with a dialog box asking where to save the CSV file. Once the user define a place the save the file a CSV file will appear there.
-
-<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/07export.JPG' width="250">
-
 
 ## Applying Attribution 
 
@@ -306,3 +300,7 @@ The one on the left contains five tabs, Index/Bands, Chip Set, show line, Global
 ​	Local Stretch: Reduces the y-axis to the max and min values. 
 
 The tab bar on the right should look familiar to you as these are your keys and values, and if you hover over a tab the values for the key will appear. Click a value and its name will populate the tab. If you used comment boxes and would like to add text to them, click the expand box and begin to type, once completed a "text submitted" value will populate the tab. Once you are finished attributing a plot be sure to click the save button to the right of the attribution bar. If saved correctly a check mark will appear next to the plot name. 
+
+To export the event table with saved attributes the user need to click on the Download CSV button in the header of the application. When clicked the user will be prompted with a dialog box asking where to save the CSV file. Once the user define a place the save the file a CSV file will appear there.
+
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/07export.JPG' width="250">
