@@ -262,11 +262,11 @@ Once opened, a dialog box will appear and the user will need to locate the datab
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/01_DB_box.JPG' width="400">
 
-After a few moments the Plots list will be populated with polygon or point identification values. Clicking on one of the plot list identification values will show the plot's spectral and temporal data.
+After a few moments the plots list will be populated with polygon or point identification values. Clicking on one of the plot list identification values will show the plot's spectral and temporal data.This may take a few moments. If no images appear in the bottom section make sure your selected database is in the same directory as your tiles folder. If you see a "no data" value in the plots list, that good. It just means the exportable CSV is writable.  
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist.JPG' width="200"> 
 
- This may take a few moments.If no images appear in the bottom section make sure your selected database is in the same directory as your tiles folder. 
+Your display should look similar to the image below.  
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/full.JPG' width="800">
 
