@@ -159,7 +159,7 @@ NOTE For Below: 6 , will output 6 geojson files with about 893 features per spli
     - In the terminal enter as follows and pertains to your operating system:
 ```
 python splitJsonByYear_v2.py \full\file\path\tiles\TimeSync\observations.geojson \full\folder\path\geojsons\
-```
+``` 
 
 ## Step 8: Edit App attribution text file
 
@@ -284,7 +284,7 @@ The user can change the base map by clicking the map icon in this image chip. Th
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/04mainchip3.JPG' width="200">
 
-At the bottom of the application's display is a set of yearly spectral image maps with a geometry on top of them. This set of temporal images help the user get a feel for what the spectral plot is displaying and allow for more informed attribute selection.
+At the bottom of the application's display is a set of yearly spectral image maps with a geometry on top of them. This set of temporal images help the user get a feel for what the spectral plot is displaying and allows for a more informed attribute selection.
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/05imagechips.JPG' width="300">
 
