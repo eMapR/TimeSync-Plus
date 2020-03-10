@@ -289,9 +289,7 @@ To export the event table with saved attributes the user need to click on the Do
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/07export.JPG' width="250">
 
 
-Applying Attribution 
-
-
+##Applying Attribution 
 
 You will notice a two separate tab bar selection at the bottom of either of the Spectral Trajectory Plot. 
 
