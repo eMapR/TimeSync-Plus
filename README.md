@@ -262,7 +262,7 @@ Once opened, a dialog box will appear and the user will need to locate the datab
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/01_DB_box.JPG' width="400">
 
-After a few moments the plots list will be populated with polygon or point identification values. Clicking on one of the plot list identification values will show the plot's spectral and temporal data.This may take a few moments. If no images appear in the bottom section make sure your selected database is in the same directory as your tiles folder. If you see a "no data" value in the plots list, that good. It just means the exportable CSV is writable.  
+After a few moments the plots list will be populated with polygon or point identification values. Clicking on one of the plot list identification values will show the plot's spectral and temporal data.This may take a few moments. If no images appear in the bottom section make sure your selected database is in the same directory as your tiles folder. If you see a "no data" value in the plots list, that good. It just means the exportable CSV is writable. Also, you notice that the plot you selected will have a green background color. This marks the plot you are currently viewing, and when you move on to another plot the green will turn to a light gray.   
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist.JPG' width="200"> 
 
@@ -278,18 +278,11 @@ More line segment can be added by continuing to double click on more observation
 
 The image chip in the upper right is different from the other images chips in that it show approximately current ariel imagery, topographical, and street base maps. 
 
-<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/04mainchip.JPG' width="200">
-
 The user can change the base map by clicking the map icon in this image chip. The user can also remove the geometry in this image chip by unselecting the ROI option in the map icon.
 
-<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/04mainchip3.JPG' width="200">
-
-At the bottom of the application's display is a set of yearly spectral image maps with a geometry on top of them. This set of temporal images help the user get a feel for what the spectral plot is displaying and allows for a more informed attribute selection.
-
-<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/05imagechips.JPG' width="300">
+At the bottom of the application's display is a set of yearly spectral image maps with a geometry on top of them. This set of temporal images help the user get a feel for what the spectral plot is displaying and allows for a more informed attribution.
 
 The attribution drop down buttons are located under the Spectral Trajectory plot, and when the cursor hovers over the button a drop down box will appear with either a comment box or a list of option...   
-
 
 To export the event table with saved attributes the user need to click on the Download CSV button in the header of the application. When clicked the user will be prompted with a dialog box asking where to save the CSV file. Once the user define a place the save the file a CSV file will appear there.
 
