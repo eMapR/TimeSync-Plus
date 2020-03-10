@@ -253,8 +253,10 @@ The application is avaible at ftp://islay.ceoas.oregonstate.edu/TimeSyncPlus/ .
 
 - Decompresses or unzipped the zipped file.
 - Open the unpackaged folder. 
-- Locate the "TSPlus_v4.3" file.
+- Locate the "TSP_v*.*" file.
 - Double click that file.
+- If you see a warning message like the one below. If so click "more info" and then a new message will appear and then click "Run anyway".   
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/winWarning1.JPG' width="400">
 
 Once opened, a dialog box will appear and the user will need to locate the database you moved to be with the tiles folder. When the DB file is found double click it, and the dialog box will disappear. 
 
