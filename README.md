@@ -272,7 +272,7 @@ Your display should look similar to the image below.
 
 The spectral plot shows the summary spectral values for the area represent by the point or polygon displayed. For visual purposes, the user can double click on two observation points to connect a line between them.
 
-<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/03_specplot3.JPG' width="600">
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/03_specplot3.JPG' width="800">
 
 More line segment can be added by continuing to double click on more observation points. To remove line segments double click on a already selected point.
 
