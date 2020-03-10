@@ -262,13 +262,13 @@ Once opened, a dialog box will appear and the user will need to locate the datab
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/01_DB_box.JPG' width="400">
 
-After a few moments the plots list will be populated with polygon or point identification values. Clicking on one of the plot list identification values will show the plot's spectral and temporal data.This may take a few moments. If no images appear in the bottom section make sure your selected database is in the same directory as your tiles folder. If you see a "no data" value in the plots list, that good. It just means the exportable CSV is writable. Also, you notice that the plot you selected will have a green background color. This marks the plot you are currently viewing, and when you move on to another plot the green will turn to a light gray.   
+After a few moments the plots list will be populated with polygon or point identification values. Clicking on one of the plot list identification values will show the plot's spectral and temporal data.This may take a few moments. If no images appear in the bottom section make sure your selected database is in the same directory as your tiles folder. If you see a "no data" value in the plots list, that good. It just means the exportable CSV is writable. Also, you'll notice that the plot you selected will have a green background color. This marks the plot you are currently viewing, and when you move on to another plot the green will turn to a light gray.   
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist.JPG' width="200"> 
 
 Your display should look similar to the image below.  
 
-<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/full1.JPG' width="800">
+<img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/full2.JPG' width="800">
 
 The spectral plot shows the summary spectral values for the area represent by the point or polygon displayed. For visual purposes, the user can double click on two observation points to connect a line between them.
 
@@ -287,5 +287,6 @@ The attribution drop down buttons are located under the Spectral Trajectory plot
 To export the event table with saved attributes the user need to click on the Download CSV button in the header of the application. When clicked the user will be prompted with a dialog box asking where to save the CSV file. Once the user define a place the save the file a CSV file will appear there.
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/07export.JPG' width="250">
+
 
 
