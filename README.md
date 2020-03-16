@@ -93,6 +93,9 @@ project
 |               *** export location for split geojson files ***
 |
 |----------|tiles
+           |      config.txt
+	   |      *** Database files will appear in step 9 ***
+	   |      TSdatabase.db 
            |
            |-------|TimeSync
                    |      observationsInfo.geojson
@@ -110,9 +113,7 @@ project
                    |       |rgbTC   ***years>>>zoomlevels>>>location>>>image.png***
                    |       |rgb432  ***years>>>zoomlevels>>>location>>>image.png***
                    |
-                   |      config.txt
-		   |      *** Database files will appear in step 9 ***
-		   |      TSdatabase.db 
+
 		   
 
 ```
