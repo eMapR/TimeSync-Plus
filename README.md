@@ -34,7 +34,7 @@ Make a point or polygon shapefile of disturbance areas. You will need to add a u
   - Double click your file.
   - Define the directory, in Assets, where you would like to save your shapefile asset
   - How to make a new directory in GEE.
-    - From the assets tab click "NEW".
+        - From the assets tab click "NEW".
 	- In the dropdown box click "Folder".
 	-  A "New Folder" dialog box will appear.
 	-  Enter the new folder's name.
@@ -263,7 +263,9 @@ Once opened, a dialog box will appear and the user will need to locate the datab
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/01_DB_box.JPG' width="400">
 
-After a few moments the plots list will be populated with polygon or point identification values. Clicking on one of the plot list identification values will show the plot's spectral and temporal data.This may take a few moments. If no images appear in the bottom section make sure your selected database is in the same directory as your tiles folder. If you see a "no data" value in the plots list, that good. It just means the exportable CSV is writable. Also, you'll notice that the plot you selected will have a green background color. This marks the plot you are currently viewing, and when you move on to another plot the green will turn to a light gray. Furthermore, a check mark means plot attribution was saved. 
+After a few moments the plots list will be populated with polygon or point identification values. Clicking on one of the plot list identification values will show the plot's spectral and temporal data.This may take a few moments. If no images appear in the bottom section make sure your selected database is in the same directory as your tiles folder. 
+
+If you see a "no data" value in the plots list, that good. It just means the exportable CSV is writable. Also, you'll notice that the plot you selected will have a green background color. This marks the plot you are currently viewing, and when you move on to another plot the green will turn to a light gray. Furthermore, a check mark means plot attribution was saved. 
 
 <img src = 'https://github.com/eMapR/TimeSync-Plus/blob/master/images/02_plotlist.JPG' width="200"> 
 
