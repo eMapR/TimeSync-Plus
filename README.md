@@ -154,7 +154,7 @@ NOTE For Below: 6 , will output 6 geojson files with about 893 features per spli
 >>>There are 5362 features in your GEE geojson file. How many split geojson files, which will become databases, would you like? 6
 ```
 
-  - Split By Year of Detection.
+  - Split By Year of Detection (this script will only work if there is a YOD feild in your starting vector file).
     - Open a terminal or command prompt.
     - Navigate to script folder in the project directory with your terminal.
     - In the terminal enter as follows and pertains to your operating system:
