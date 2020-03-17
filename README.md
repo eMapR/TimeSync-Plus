@@ -288,9 +288,9 @@ At the bottom of the application's display is a set of yearly spectral image map
 
 ## Applying Attribution 
 
-You will notice a two separate tab bar selection at the bottom of either of the Spectral Trajectory Plot. 
+You will notice a two separate tab bar selections at the bottom on either side of the Spectral Trajectory Plot. 
 
-The one on the left contains five tabs, Index/Bands, Chip Set, show line, Global stretch, and local stretch. 
+The one on the left contains five tabs, Index/Bands, Chip Set, show line, Global stretch, and local stretch. These option allow the user change how see the data in the Spectral Trajectory Plot and in the Image Chips. 
 
 - Index/Bands : Changes the Spectral Trajectory Plot values to various bands and indices 
 - Chip Set: Changes the image chips color scheme 
