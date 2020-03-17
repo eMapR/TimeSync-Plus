@@ -1,10 +1,10 @@
 
-# TimeSync-Plus  !!! under construction !!!
+# TimeSync-Plus 
 TimeSync+ is an application for gathering point and polygon spectral temporal information from Landsat time series data into a database.
 
 ## About 
 
-TimeSync+ is a desktop application modeled after the original [TimeSync application](http:example.com) that was originally developed as a validation tool for the [LandTrendr](http:example.com) spectral-temporal segmentation algorimth. Since its inception, its utility has grown beyond a segmentation validation tool. It is also useful for exploring know or predicted change events on the landscape and for collecting information about individual observations in time. TimeSync-Plus better handles these two significant use cases (event and observations information collection) more explicilty and greatly expands flexibity for user to define what tpyes of information should be recorded.
+TimeSyncPlus is a desktop application modeled after the original [TimeSync application](https://timesync.forestry.oregonstate.edu/) that was originally developed as a validation tool for the [LandTrendr](https://emapr.github.io/LT-GEE/landtrendr.html) spectral-temporal segmentation algorimth. Since its inception, its utility has grown beyond a segmentation validation tool. It is also useful for exploring know or predicted change events on the landscape and for collecting information about individual observations in time. TimeSync-Plus better handles these two significant use cases (event and observations information collection) more explicilty and greatly expands flexibity for user to define what tpyes of information should be recorded.
 
 ### Improvements:
 - Slippy map zoom and pan image chips
