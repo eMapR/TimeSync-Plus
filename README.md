@@ -4,7 +4,7 @@ TimeSync+ is an application for gathering point and polygon spectral temporal in
 
 ## About 
 
-TimeSyncPlus is a desktop application modeled after the original [TimeSync application](https://timesync.forestry.oregonstate.edu/) that was originally developed as a validation tool for the [LandTrendr](https://emapr.github.io/LT-GEE/landtrendr.html) spectral-temporal segmentation algorimth. Since its inception, its utility has grown beyond a segmentation validation tool. It is also useful for exploring know or predicted change events on the landscape and for collecting information about observations in time. TimeSync-Plus better handles these two significant use cases (event and observations information collection) more explicilty and greatly expands flexibity for user to define what types of information should be recorded.
+TimeSyncPlus is a desktop application modeled after the original [TimeSync application](https://timesync.forestry.oregonstate.edu/) that was originally developed as a validation tool for [LandTrendr](https://emapr.github.io/LT-GEE/landtrendr.html) a spectral-temporal segmentation algorimth. Since its inception, its utility has grown beyond a segmentation validation tool. It is also useful for exploring know or predicted change events on the landscape and for collecting information about observations in time. TimeSync-Plus better handles these two significant use cases (event and observations information collection) more explicilty and greatly expands flexibity for users to define what types of information should be recorded.
 
 ### Improvements:
 - Slippy map zoom and pan image chips
@@ -17,7 +17,7 @@ TimeSyncPlus is a desktop application modeled after the original [TimeSync appli
 
 ## Step 1: Make a shapefile
 
-Make a point or polygon shapefile of disturbance areas. You will need to add a uniq id field to your shapefile called "uniqID" where each feature has a uniq ID. You can either generate your own shapefiles or use the [LT-ChangeDB](http:example.com) process to make distubance polygons for you. This shapefile will need to zipped in order to upload it to GEE.
+Make a point or polygon shapefile for areas of interest. You will need to add a unique field to your shapefile called "uniqID" where each feature has a uniq ID. These IDs will become the display names for each feature in the TimeSyncPlus. This shapefile will also need to be zipped in order to upload it to Google Earth Engine.
 
 ## Step 2: How to Upload the shapefile to Google Earth Engine
 - Do you have a GEE (Google Earth Engine) account?
