@@ -198,7 +198,7 @@ You'll notice that there are some keys in the eventTable that are not in the dis
 
 If you wanted to add a new category and values you would do as follows:
 
-- Make a key value pair
+- Make a key value pair. Something like, 
 `'State': ['no change', 'postive change', 'negative change']`
 - Add the the key value pair anywhere in the displayTable dictionary (in the "'displayTable':{add here}")
 - If a value is added anywhere but the end of the displayTable dictionary be sure to add a "," at the end.
