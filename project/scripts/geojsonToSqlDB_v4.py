@@ -4,27 +4,23 @@ import sqlite3
 from sqlite3 import Error
 from sys import platform
 from collections import OrderedDict
-#import yaml
-# dialog box for paths
 import Tkinter,tkFileDialog
-#from Tkinter.filedialog import askopenfilename
 import tkMessageBox
 import os
 import glob
 import sys
 
-#=============================================================================
-
-
 #============================================================================
+# opens the json file from GEE to be read only.
 def openJson(jsonPath):
     with open(jsonPath, 'r+') as f:
         data = json.load(f)
-    return data
+    return (data)
 #=============================================================================
-def get_yaml(yam):
+# reads in the config text file into a string line by line..
+def get_txt(txt):
     a=''
-    with open (yam,'r') as f:
+    with open (txt,'r') as f:
         for line in f:
             line = line.strip()
             a+=line
@@ -59,10 +55,9 @@ def create_table(conn, create_table_sql):
         print(e)
 #=============================================================================
 def input_values_table(conn, main):
-    """
-    Create a new project into the projects table
+    """ Create a new project into the projects table
     :param conn:
-    :param project:
+    :param project
     :return: project id
     """
     cur = conn.cursor()
@@ -71,8 +66,8 @@ def input_values_table(conn, main):
 #=============================================================================
 def sql_input_list(yam):
 
-    # gets yaml data in the form of a dictionary
-    dataMap = get_yaml(yam)
+    # gets text string in the form of a dictionary
+    dataMap = get_txt(yam)
     
     # gets the keys and values as lists from the yaml dictionary
     tablenames =  list(dataMap.keys())
@@ -86,7 +81,7 @@ def sql_input_list(yam):
             tablenames.append(tablenames[indexOut])
             del tablenames[indexOut]
             
-    # blank list yaml dictionary values 
+    # blank list txt dictionary values 
     templ = []
     addtext = []
     dropdown = []
@@ -99,7 +94,7 @@ def sql_input_list(yam):
                 dropdownstrings.append(str(val).strip('[]'))	
     fieldnames.append(dropdown)
     
-    # loops through yaml file dictionary and adds sql data type to column name
+    # loops through config file dictionary and adds sql data type to column name
     for p in fieldnames:
         for q in p:
             add = q + ' text'
@@ -135,7 +130,6 @@ def observation_value_list(data,year):
     year = str(year)
     templist = []
     templist2 = []
-    #print(len(data['features']))# ---------------------maybe here to split in many databases-----nope
     counter = 1 
     for values in data['features']:
         if 1 == 2:
