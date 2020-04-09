@@ -52,7 +52,7 @@ def geoJsonSplit(geojson,outdir):
     sorted_obj['features'] = sorted(data['features'], key=lambda x : x['properties']['yod'], reverse=False)
 
     #loop over the range lenght from the start to the end year.
-    for Year in range(int(startYear),int(endYear)):
+    for Year in range(int(startYear),int(endYear)+1):
 
         #filters and list indexs of a matching year   
         #output_list = [x for x in sorted_obj['features'] if str(Year) == x['properties']['uniqID'][14:18]]
