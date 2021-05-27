@@ -17,7 +17,7 @@ TimeSyncPlus is a desktop application modeled after the original [TimeSync appli
 
 ## Step 1: Make a shapefile
 
-Make a point or polygon shapefile for areas of interest. You will need to add a unique field to your shapefile called "uniqID" where each feature has a unique ID. These IDs will become the display names for each feature in the TimeSyncPlus. This shapefile will also need to be zipped in order to upload it to Google Earth Engine.
+Make a point or polygon shapefile for areas of interest. You will need to add at least two fields to your shapefile called "uniqID", where each feature has a unique ID, and "LT_YOD", which can be null or populated with a year of interest. These  unique IDs will become the display names for each feature in the TimeSyncPlus. This shapefile will also need to be zipped in order to upload it to Google Earth Engine.
 
 ## Step 2: How to Upload the shapefile to Google Earth Engine
 - Do you have a GEE (Google Earth Engine) account?
