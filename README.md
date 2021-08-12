@@ -54,10 +54,10 @@ Make a point or polygon shapefile for areas of interest. You will need to add at
 - Click on the "Scripts" Tab in the upper left panel.
 - Open "Reader" the the "Scripts" Tab
 - Open "TS_Plus_GetData.js"
-- In the upper center panel verify that line 6 points to  
-	 `users/jstnbraaten/modules:ee-lcb.js`
+- In the upper center panel verify that line 5 points to  
+	 `users/emaprlab/public:TimeSync/TimeSync-Plus/ee-lcb-tsp.js`
 - There are a variety of parameters that can be changed and there is a brief description of each on the same line as the parameters value. 
-- In the upper center panel edit line 16 to your file path string of your shapefile asset.
+- In the upper center panel edit line 10 to your file path string of your shapefile asset.
 - Once your happy with your parameter adjustments (if needed) click "Run" in the upper right portion of the upper center panel
 - After a few moments the "Tasks" Tab will flash yellow
 - Click the "Tasks" Tab.
