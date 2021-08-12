@@ -114,7 +114,7 @@ def sql_input_list(yam):
 def findEndYear(data):
     #print(data['features'][1]['properties'])
     timeFrame = []
-    for key, value in data['features'][1]['properties'].iteritems():
+    for key, value in data['features'][0]['properties'].iteritems():
         try:
             dataYears = int(key[0:4])
             timeFrame.append(dataYears)
