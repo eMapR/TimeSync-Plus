@@ -229,7 +229,7 @@ The new config file would then look like this:
 - Navigate to script folder in the project directory with your terminal.
 - In the terminal enter as follows:
 ```
-python geojsonToSqlDB_v2.py
+python geojsonToSqlDB_v4.py
 ```
   - A dialog box will appear asking for the location of the config.txt file.
 - Click OK
