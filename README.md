@@ -202,7 +202,7 @@ If you wanted to add a new category and values you would do as follows:
 `'State': ['no change', 'postive change', 'negative change']`
 - Add the key value pair anywhere in the displayTable list of keys.
 - If a key value pair is added anywhere but the end of the displayTable list of keys be sure to add a "," at the end.
-- Add the key, in this case "State" to the end of the list of values in the eventTable.
+- Add the key, in this case "State" to the end of the list of values in eventTable key value pair.
 
 The new config file would then look like this:
 
