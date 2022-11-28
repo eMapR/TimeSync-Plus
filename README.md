@@ -65,7 +65,7 @@ Make a point or polygon shapefile for areas of interest. You will need to add at
 	 `users/emaprlab/public:TimeSync/TimeSync-Plus/ee-lcb-tsp.js`
 - There are a variety of parameters that can be changed and there is a brief description of each on the same line as the parameters value.
 	`Be sure to verify the startDate and endDate as they define the LandSat images that go into the yearly composites.`
-	`Also change the EPSG variable for your region shapefile.`
+	`Also change the EPSG variable for your region.`
 - In the upper center panel edit line 10 to your file path string of your shapefile asset.
 - Once your happy with your parameter adjustments (if needed) save the file and click "Run" in the upper right portion of the upper center panel
 - After a few moments the "Tasks" Tab will flash yellow
