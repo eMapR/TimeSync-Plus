@@ -81,6 +81,10 @@ Make a point or polygon shapefile for areas of interest. You will need to add at
 File Structure:
 ```
 project
+|
+|      config.txt
+|      *** Database files will appear in step 9 ***
+|      TSdatabase.db 
 |              
 |---------|scripts
 |              gdal2tiles.py
@@ -93,9 +97,7 @@ project
 |               *** export location for split geojson files ***
 |
 |----------|tiles
-           |      config.txt
-	   |      *** Database files will appear in step 9 ***
-	   |      TSdatabase.db 
+
            |
            |-------|TimeSync
                    |      observationsInfo.geojson
