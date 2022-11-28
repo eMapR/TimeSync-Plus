@@ -1,6 +1,6 @@
 
 # TimeSync-Plus 
-TimeSync+ is an application for gathering point and polygon spectral temporal information from Landsat time series data into a database.
+
 
 ## About 
 
@@ -14,7 +14,7 @@ TimeSyncPlus is a desktop application modeled after the original TimeSync applic
 - Modern web-like interface
 - Uses Google Earth Engine to process data
 
-
+### Workflow:
 ## Step 1: Make a shapefile
 
 Make a point or polygon shapefile for areas of interest. You will need to add at least two fields to your shapefile called "uniqID", where each feature has a unique ID, and "yod", which can be null or populated with a year of interest. These  unique IDs will become the display names for each feature in the TimeSyncPlus. This shapefile will also need to be zipped in order to upload it to Google Earth Engine.
