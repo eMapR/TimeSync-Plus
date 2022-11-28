@@ -252,7 +252,7 @@ python geojsonToSqlDB_v4.py
 
 - Make sure that the Database you want to attributed is in the same directory as the tiles folder.
 
-The application is avaible at ftp://islay.ceoas.oregonstate.edu/TimeSyncPlus/ .
+The application is avaible at this [link](https://drive.google.com/file/d/1n0snrpdcaQYhqlmjV_tcDcZuoaQ5rMbZ/view?usp=share_link) .
 
 - Decompresses or unzipped the zipped file.
 - Open the unpackaged folder. 
