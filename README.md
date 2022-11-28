@@ -1,5 +1,5 @@
 
-# TimeSync-Plus 
+# TimeSync-Plus  (Windows Only)
 
 
 ## About 
@@ -17,6 +17,7 @@ TimeSyncPlus is a desktop application modeled after the original TimeSync applic
 # Workflow:
 
 ## Requirement
+- Shapefile
 - Google Earth Engine Account 
 - Anaconda Python Program
 - TimeSync+ Application (link in workflow)
