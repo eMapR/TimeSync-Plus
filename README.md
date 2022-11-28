@@ -19,7 +19,7 @@ TimeSyncPlus is a desktop application modeled after the original TimeSync applic
 ## Requirements
 - Shapefile
 - Google Earth Engine Account 
-- Anaconda Python Program
+- Anaconda Python Program (python 2.7)
 - TimeSync+ Application (link in workflow)
 
 ## Step 1: Make a shapefile
@@ -55,7 +55,7 @@ Make a point or polygon shapefile for areas of interest. You will need to add at
 ## Step 3: How to Run Google Earth Engine Script to generate data
 
 - Go to [GEE](https://code.earthengine.google.com/).
-- If don't have repository access go to the links below. They should add file paths in your GEE "Reader" directory under "scripts".
+- If don't have access to repository below. Both scrtips will be added to your GEE "Reader" directory under "scripts".
     - [Support Module](https://code.earthengine.google.com/1dc01c4bb7dd89f3befd83e9946bd7d2)
     - [TS Plus GetData](https://code.earthengine.google.com/113a60b47a05a26d9faebe3ce90d6c48)
 - Click on the "Scripts" Tab in the upper left panel.
@@ -65,7 +65,7 @@ Make a point or polygon shapefile for areas of interest. You will need to add at
 	 `users/emaprlab/public:TimeSync/TimeSync-Plus/ee-lcb-tsp.js`
 - There are a variety of parameters that can be changed and there is a brief description of each on the same line as the parameters value. 
 - In the upper center panel edit line 10 to your file path string of your shapefile asset.
-- Once your happy with your parameter adjustments (if needed) click "Run" in the upper right portion of the upper center panel
+- Once your happy with your parameter adjustments (if needed) save the file and click "Run" in the upper right portion of the upper center panel
 - After a few moments the "Tasks" Tab will flash yellow
 - Click the "Tasks" Tab.
 - In the "Tasks" there will be 7 tasks: 4 images (rgb654 rgb543 rgbTC rbg432) and 3 files (observationsInfo, Observations-KML, Observations_GeoJSON).
