@@ -15,9 +15,15 @@ TimeSyncPlus is a desktop application modeled after the original TimeSync applic
 - Uses Google Earth Engine to process data
 
 # Workflow:
+
+## Requirement
+- Google Earth Engine Account 
+- Anaconda Python Program
+- TimeSync+ Application (link in workflow)
+- 
 ## Step 1: Make a shapefile
 
-Make a point or polygon shapefile for areas of interest. You will need to add at least two fields to your shapefile called "uniqID", where each feature has a unique ID, and "yod", which can be null or populated with a year of interest. These  unique IDs will become the display names for each feature in the TimeSyncPlus. This shapefile will also need to be zipped in order to upload it to Google Earth Engine.
+Make a point or polygon shapefile for areas of interest. You will need to add at least two fields to your shapefile called "uniqID" and "yod", where each feature has a unique ID (string), and a year of detection which can be null (int). The unique IDs will become the display names for each feature in the TimeSyncPlus application. The year of detection will also be display for each feature in the aplication. This shapefile will also need to be zipped in order to upload it to Google Earth Engine.
 
 ## Step 2: How to Upload the shapefile to Google Earth Engine
 - Do you have a GEE (Google Earth Engine) account?
