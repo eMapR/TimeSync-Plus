@@ -57,7 +57,7 @@ Make a point or polygon shapefile for areas of interest. You will need to add at
 - Go to [GEE](https://code.earthengine.google.com/).
 - If don't have access to repository below. Both scrtips will be added to your GEE "Reader" directory under "scripts".
     - [Support Module](https://code.earthengine.google.com/1dc01c4bb7dd89f3befd83e9946bd7d2)
-    - [TS Plus GetData](https://code.earthengine.google.com/113a60b47a05a26d9faebe3ce90d6c48)
+    - [TS Plus GetData](https://code.earthengine.google.com/9dc73520105725ec2fc148fbc9ed0df3)
 - Click on the "Scripts" Tab in the upper left panel.
 - Open "Reader" the the "Scripts" Tab
 - Open "TS_Plus_GetData.js"
