@@ -4,7 +4,7 @@
 
 ## About 
 
-TimeSyncPlus is a desktop application modeled after the original TimeSync application that was originally developed as a validation tool for LandTrendr, a spectral-temporal segmentation algorithm. Since its inception, its utility has grown beyond a segmentation validation tool. It is also useful for exploring known or predicted change events on the landscape and for collecting information about observations in time. TimeSync-Plus better handles these two significant use cases (event and observations information collection) more explicitly and greatly expands flexibility for users to define what types of information should be recorded.
+TimeSyncPlus is a desktop application modeled after the original TimeSync application that was originally developed as a validation tool for LandTrendr, a spectral-temporal segmentation algorithm. Since its inception, its utility has grown beyond a segmentation validation tool. It is now a vector vailidaton tool that allows for user defined attribution labels. Time Sync Plus imploys temporal trijectories of spectral information, LandSat imagery and high resolution imagery to guide the user to informed attributions of points or polygons. 
 
 ### Improvements:
 - Slippy map zoom and pan image chips
